@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Longevity Retreat Bali · 2. bis 9. Februar 2027 · mit Ron Perduss</title>
+<meta name="description" content="Eine Woche auf Bali rund ums gesunde Älterwerden: Yoga, Training, Vorträge, Einzelcoaching, Melukat und ein Vormittag bei SOS Bali. Mit Ron Perduss, 2. bis 9. Februar 2027 im Grün Canggu.">
+<meta property="og:title" content="Longevity Retreat Bali mit Ron Perduss">
+<meta property="og:description" content="2. bis 9. Februar 2027 im Grün Canggu, Bali. Höchstens 20 Plätze.">
+<meta property="og:image" content="img/gruen-villa.jpg">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+/* Layout: ein Fotoband-Rhythmus – volle Bildbänder wechseln mit ruhigen Textspalten; Farben aus der Woche selbst: Dschungelgrün, Sarong-Violett, Ringelblumen-Orange */
+:root{
+  --bg:#f4f6f1; --surface:#e7ece3; --fg:#17251f; --muted:#56655d; --line:#c9d3c6;
+  --jungle:#1f3a2e; --violet:#5a3d8f; --marigold:#d98a1c; --on-dark:#f4f6f1;
+  --display:"Gloock","Georgia","Times New Roman",serif;
+  --body:"Figtree","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#101a15; --surface:#18251e; --fg:#e8eee6; --muted:#9fb0a6; --line:#2d3d34;
+  --jungle:#0b1410; --violet:#a58ad6; --marigold:#eba545; --on-dark:#eef3ec; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101a15; --surface:#18251e; --fg:#e8eee6; --muted:#9fb0a6; --line:#2d3d34;
+  --jungle:#0b1410; --violet:#a58ad6; --marigold:#eba545; --on-dark:#eef3ec; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.6;margin:0}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.08;text-wrap:balance;margin:0}
+h2{font-size:clamp(2rem,5vw,3.25rem)}
+h3{font-size:1.45rem}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--marigold);outline-offset:3px}
+.wrap{max-width:1120px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.label{font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.section{padding-block:clamp(56px,9vw,112px)}
+.lead{font-size:clamp(1.15rem,2vw,1.35rem);line-height:1.55;max-width:34em}
+.prose{max-width:36em;display:grid;gap:1em;color:var(--fg)}
+
+/* Platzhalter: sichtbar markiert, bis Termin und Preis feststehen */
+.tbd{display:inline-flex;align-items:center;gap:.5em;border:1.5px dashed var(--marigold);color:var(--fg);border-radius:999px;padding:.3em .9em;font-family:var(--mono);font-size:.82rem;letter-spacing:.04em}
+.tbd::before{content:"";width:.55em;height:.55em;border-radius:50%;background:var(--marigold)}
+
+/* Hero */
+.hero{position:relative;background:var(--jungle);color:#f4f6f1;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.62}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,20,16,.15) 0%,rgba(11,20,16,.25) 45%,rgba(11,20,16,.85) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-block:clamp(120px,22vw,220px) clamp(40px,7vw,72px);display:grid;gap:22px}
+.hero .label{color:#d9e2d6}
+.hero h1{font-size:clamp(3rem,10vw,7.2rem);letter-spacing:-.01em;max-width:9ch}
+.hero .lead{color:#eef3ec}
+.hero .tbd{color:#f4f6f1;border-color:#eba545}
+.hero .tbd::before{background:#eba545}
+.date-chip{font-family:var(--mono);font-size:.9rem;letter-spacing:.04em;color:#f4f6f1;border:1px solid rgba(244,246,241,.5);border-radius:999px;padding:.35em 1em}
+.hero-row{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.btn{display:inline-block;background:var(--marigold);color:#17251f;text-decoration:none;font-weight:600;padding:.85em 1.4em;border-radius:6px}
+.btn:hover{filter:brightness(1.06)}
+
+/* Zwei Zahlen */
+.gap-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(32px,6vw,80px);align-items:start}
+.numbers{display:grid;gap:18px;border-left:2px solid var(--violet);padding-left:22px}
+.numbers div{display:grid;gap:2px}
+.numbers b{font-family:var(--display);font-weight:400;font-size:2.4rem;line-height:1;color:var(--violet)}
+.numbers span{color:var(--muted);font-size:.95rem}
+
+/* Was dich erwartet / was es nicht ist */
+.two-lists{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);margin-top:44px}
+.two-lists ul{list-style:none;margin:16px 0 0;padding:0;display:grid}
+.two-lists li{padding:12px 0;border-top:1px solid var(--line);font-size:1.08rem}
+.two-lists li:last-child{border-bottom:1px solid var(--line)}
+.not li{color:var(--muted)}
+.not li::before{content:"Kein Programmpunkt: ";position:absolute;left:-9999px}
+
+/* Tagesrhythmus */
+.day{background:var(--surface)}
+.day-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:40px;border-top:1px solid var(--line)}
+.slot{padding:22px 20px 26px 0;display:grid;gap:8px;align-content:start;min-width:0}
+.slot + .slot{padding-left:20px;border-left:1px solid var(--line)}
+.slot time{font-family:var(--mono);font-size:.85rem;color:var(--violet);font-variant-numeric:tabular-nums}
+.slot h3{font-size:1.3rem}
+.slot p{color:var(--muted);font-size:.98rem}
+.day-note{margin-top:28px;color:var(--muted);max-width:40em}
+
+/* Fotoband */
+.band{display:grid;grid-template-columns:repeat(12,1fr);gap:8px;padding-inline:8px}
+.band figure{margin:0;position:relative;overflow:hidden;background:var(--surface);min-width:0}
+.band img{width:100%;height:100%;object-fit:cover}
+.band figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 12px;color:#f4f6f1;font-size:.85rem;background:linear-gradient(180deg,transparent,rgba(11,20,16,.78))}
+.band figcaption b{display:block;font-family:var(--mono);font-weight:500;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#f0c27a;margin-bottom:2px}
+.f-a{grid-column:span 5;aspect-ratio:4/5}
+.f-b{grid-column:span 7;aspect-ratio:7/5}
+.f-c{grid-column:span 4;aspect-ratio:4/5}
+.f-d{grid-column:span 4;aspect-ratio:4/5}
+.f-e{grid-column:span 4;aspect-ratio:4/5}
+.f-w{grid-column:span 8;aspect-ratio:16/10}
+.f-full{grid-column:1/-1;aspect-ratio:2/1}
+.price-note{margin-top:28px;font-size:1.1rem}
+.price-note b{color:var(--violet)}
+.band + .band{margin-top:8px}
+
+/* Erlebnisse */
+.moments{display:grid;grid-template-columns:repeat(2,1fr);gap:40px 56px;margin-top:44px}
+.moment{display:grid;gap:8px;align-content:start;padding-top:18px;border-top:1px solid var(--line)}
+.moment .label{color:var(--violet)}
+.moment p{color:var(--muted)}
+
+/* Team */
+.team{display:grid;grid-template-columns:repeat(2,1fr);gap:0 56px;margin-top:40px}
+.person{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;padding:24px 0;border-top:1px solid var(--line)}
+.initial{grid-row:span 3;width:52px;height:52px;border-radius:50%;background:var(--violet);color:var(--bg);display:grid;place-items:center;font-family:var(--display);font-size:1.5rem}
+.person .label{color:var(--muted)}
+.person p{color:var(--muted);font-size:.98rem}
+.team .person:last-child:nth-child(odd){grid-column:1/-1}
+.moments .moment:last-child:nth-child(odd){grid-column:1/-1}
+.host{background:var(--jungle);color:var(--on-dark)}
+.host .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(28px,6vw,72px);align-items:center}
+.host .label{color:#c8d4c4}
+.host p{color:#dfe7dc}
+.host img{border-radius:4px;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;width:100%;max-height:640px}
+
+/* Termin & Preis */
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px;border-top:2px solid var(--fg)}
+.fact{padding:22px 22px 24px 0;display:grid;gap:10px;align-content:start;min-width:0}
+.fact + .fact{padding-left:22px;border-left:1px solid var(--line)}
+.fact h3{font-size:1.25rem}
+.fact p{color:var(--muted);font-size:.98rem}
+.included{margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px)}
+.included ul{margin:12px 0 0;padding-left:1.1em;display:grid;gap:6px;color:var(--muted)}
+
+/* FAQ */
+.faq{margin-top:36px;border-top:1px solid var(--line);max-width:760px}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;padding:18px 36px 18px 0;font-weight:600;font-size:1.08rem;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:12px;font-family:var(--display);font-size:1.6rem;color:var(--violet);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 20px;color:var(--muted);max-width:40em}
+
+/* Kontakt */
+.contact{background:var(--surface)}
+.contact .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(28px,6vw,72px);align-items:center}
+.mailbox{display:grid;gap:14px;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:26px}
+.mail{font-family:var(--mono);font-size:clamp(1rem,2.6vw,1.3rem);user-select:all;overflow-wrap:anywhere}
+.copy{justify-self:start;background:var(--fg);color:var(--bg);border:0;border-radius:6px;padding:.7em 1.1em;font:600 .95rem var(--body);cursor:pointer}
+.copy-status{font-size:.9rem;color:var(--muted);min-height:1.4em}
+.formbox{display:grid;gap:10px;min-width:0}
+.formbox iframe{width:100%;height:1250px;border:1px solid var(--line);border-radius:6px;background:#fff}
+.form-fallback,.alt-mail{font-size:.92rem;color:var(--muted)}
+.form-fallback a,.alt-mail a{color:inherit}
+.pl-title{margin-top:44px;font-size:1.25rem}
+.pricelist{width:100%;max-width:760px;margin-top:14px;border-collapse:collapse;font-size:1rem}
+.pricelist th{text-align:left;font:600 .78rem var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:0 0 10px;border-bottom:2px solid var(--fg)}
+.pricelist th:last-child,.pricelist td:last-child{text-align:right;white-space:nowrap;padding-left:16px}
+.pricelist td{padding:14px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.pricelist tr.main td{font-size:1.1rem}
+.pricelist tr.main td:last-child{font-weight:700}
+.pricelist td span{display:block;color:var(--muted);font-size:.92rem;margin-top:4px}
+.pricelist tr.sub td{color:var(--muted);font-size:.92rem;padding-top:18px;border-bottom:0}
+.closing{font-family:var(--display);font-size:clamp(1.6rem,3.6vw,2.4rem);line-height:1.15}
+
+footer{padding-block:36px;color:var(--muted);font-size:.88rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+@media (max-width:860px){
+  .gap-grid,.two-lists,.moments,.team,.host .wrap,.contact .wrap,.included{grid-template-columns:1fr}
+  .day-grid{grid-template-columns:1fr 1fr}
+  .slot:nth-child(3){padding-left:0;border-left:0}
+  .slot:nth-child(n+3){border-top:1px solid var(--line)}
+  .facts{grid-template-columns:1fr}
+  .fact + .fact{padding-left:0;border-left:0;border-top:1px solid var(--line)}
+  .f-a,.f-b,.f-c,.f-d,.f-e,.f-w{grid-column:span 6;aspect-ratio:4/5}
+  .f-b,.f-w,.f-full{grid-column:span 12;aspect-ratio:3/2}
+}
+@media (max-width:480px){
+  .day-grid{grid-template-columns:1fr}
+  .slot + .slot{padding-left:0;border-left:0;border-top:1px solid var(--line)}
+  .f-a,.f-c,.f-d,.f-e{grid-column:span 12;aspect-ratio:4/3}
+}
+/* Stimmen der Gäste */
+.voices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px;margin-top:36px}
+.voice{margin:0;padding:28px 26px;border-radius:4px;background:var(--surface);display:grid;gap:18px;align-content:space-between}
+.voice blockquote{margin:0;font-family:var(--display);font-size:1.45rem;line-height:1.25}
+.voice figcaption{font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.voice.v-gold{background:var(--marigold);color:#17251f}
+.voice.v-gold figcaption{color:#17251f}
+.voice.v-violet{background:var(--violet);color:#f4f6f1}
+.voice.v-violet figcaption,.voice.v-jungle figcaption{color:#f0c27a}
+.voice.v-jungle{background:var(--jungle);color:#f4f6f1}
+footer a{text-decoration:underline;text-underline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img src="img/pool.jpg" alt="Die Retreat-Gruppe sitzt lachend am Rand eines Wasserbeckens voller Blütenblätter, Füße im Wasser">
+  <div class="wrap">
+    <p class="label">Longevity Retreat Bali · mit Ron Perduss</p>
+    <h1>Sieben Tage, die bleiben.</h1>
+    <p class="lead">Eine Woche auf Bali mit Yoga, Training, Online-Vorträgen von Fachleuten und Einzelcoaching. Dazu die Wasserzeremonie Melukat, ein Abend am Feuer und ein Vormittag bei einer Hilfsküche.</p>
+    <div class="hero-row">
+      <a class="btn" href="#kontakt">Interesse anmelden</a>
+      <span class="date-chip">2. bis 9. Februar 2027 · Programm 1.390 €, Unterkunft ab 200 € pro Person</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="wrap gap-grid">
+      <div style="display:grid;gap:22px;min-width:0">
+        <p class="label">Worum es geht</p>
+        <h2>Mehr Lebensqualität. Nicht nur mehr Lebenszeit.</h2>
+        <div class="prose">
+          <p>Wie lange wir leben, ist nur die eine Frage. Die andere ist, wie viele dieser Jahre wir in guter Verfassung verbringen.</p>
+          <p>Vieles davon entscheidet sich im Alltag: wie wir uns bewegen, essen, schlafen und mit Stress umgehen.</p>
+          <p>In dieser Woche bekommst du verständliches Wissen dazu und die Zeit, es auszuprobieren, bevor der Alltag wieder da ist.</p>
+        </div>
+      </div>
+      <div class="numbers" aria-label="Das Retreat in Zahlen">
+        <div><b>6</b><span>volle Programmtage</span></div>
+        <div><b>20</b><span>Teilnehmer:innen höchstens</span></div>
+        <div><b>5</b><span>Fachleute im Team, dazu Ron als Gastgeber</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band" aria-label="Eindrücke vom Retreat">
+    <figure class="f-a"><img src="img/melukat.jpg" alt="Teilnehmende in violetten Sarongs sitzen vor einem Quellheiligtum" loading="lazy"><figcaption><b>Melukat</b>Wasserzeremonie in Griya Beji</figcaption></figure>
+    <figure class="f-b"><img src="img/jamu.jpg" alt="Kurkuma, Zitronengras und getrocknete Gewürze auf einem Tisch" loading="lazy"><figcaption><b>Jamu</b>Traditionelles Kräutergetränk, selbst gemörsert</figcaption></figure>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="label">Das Programm</p>
+      <h2>Ein Programm, das zu dir passt.</h2>
+      <div class="two-lists">
+        <div>
+          <h3>Was dich erwartet</h3>
+          <ul>
+            <li>Bewegung, die zu deinem Körper passt</li>
+            <li>Yoga und Meditation am Morgen</li>
+            <li>Wissen ohne Fachchinesisch</li>
+            <li>Gutes Essen, frisch gekocht</li>
+            <li>Bali abseits der Touristenpfade</li>
+            <li>Eine kleine Gruppe</li>
+          </ul>
+        </div>
+        <div class="not">
+          <h3>Was es nicht ist</h3>
+          <ul>
+            <li>Kein Bootcamp</li>
+            <li>Kein Fastenprogramm</li>
+            <li>Keine Klinik</li>
+            <li>Kein Leistungsdruck</li>
+            <li>Keine Selbstoptimierung</li>
+            <li>Keine leeren Versprechen</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section day">
+    <div class="wrap">
+      <p class="label">Ein Tag im Retreat</p>
+      <h2>Ein Rhythmus, kein Pflichtprogramm.</h2>
+      <div class="day-grid">
+        <div class="slot"><time>morgens</time><h3>Yoga und Meditation</h3><p>Mit Stefan, solange es noch kühl ist. Danach Frühstück in Ruhe.</p></div>
+        <div class="slot"><time>vormittags</time><h3>Bewegen und Erleben</h3><p>Training mit Danny, ein Ausflug oder ein Workshop in der Villa.</p></div>
+        <div class="slot"><time>mittags</time><h3>Pause</h3><p>An Tagen ohne Ausflug ist mittags frei. Zeit für ein Einzelcoaching, den Pool oder ein Café in Canggu.</p></div>
+        <div class="slot"><time>abends</time><h3>Zusammen</h3><p>Gemeinsames Abendessen in der Villa, an manchen Abenden ein Vortrag oder das Feuer.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band" aria-label="Kochen und Essen">
+    <figure class="f-c"><img src="img/moerser.jpg" alt="Hände zerstoßen Gewürze in einem Holzmörser" loading="lazy"><figcaption><b>Jamu</b>Workshop im Oktober 2026</figcaption></figure>
+    <figure class="f-d"><img src="img/suppe.jpg" alt="Kürbissuppe wird in einen ausgehöhlten Kürbis gegossen" loading="lazy"><figcaption><b>Malaika Secret Home</b>Mittagessen im Oktober 2026</figcaption></figure>
+    <figure class="f-e"><img src="img/kokos.jpg" alt="Grüne Trinkkokosnüsse auf einem Holztisch" loading="lazy"><figcaption><b>Kochen</b>Kochkurs im Oktober 2026</figcaption></figure>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="label">Erlebnisse</p>
+      <h2>Das wirst du erleben.</h2>
+      <div class="moments">
+        <div class="moment"><p class="label">Wasser</p><h3>Melukat in Griya Beji</h3><p>Ein balinesisch-hinduistisches Reinigungsritual mit heiligem Wasser bei Ubud. Ibu Sri begleitet die Zeremonie. Am Abend vorher stimmen wir uns gemeinsam darauf ein.</p></div>
+        <div class="moment"><p class="label">Tradition</p><h3>Jamu-Workshop in der Villa</h3><p>Jamu ist ein traditionelles Kräutergetränk aus Indonesien. Du mörserst und presst es selbst aus frischen Wurzeln und Gewürzen und nimmst ein Fläschchen mit.</p></div>
+        <div class="moment"><p class="label">Kochen</p><h3>Kochkurs mit unserem Koch</h3><p>In der Villa kochst du mit dem Koch, der uns die ganze Woche versorgt. Danach essen wir zusammen, was wir gekocht haben. Die Rezepte stehen im Begleitheft.</p></div>
+        <div class="moment"><p class="label">Feuer</p><h3>Ein Abend am Feuer</h3><p>Am vorletzten Abend sitzen wir zusammen am Feuer. Jede und jeder nimmt sich eine Sache für zu Hause vor. Danach gibt es ruhiges Yoga.</p></div>
+        <div class="moment"><p class="label">Helfen</p><h3>Rescue Kitchen mit SOS Bali</h3><p>Mit der Hilfsorganisation Scholars of Sustenance kochst du in der Gruppe Mahlzeiten aus geretteten Lebensmitteln. Danach verteilt ihr sie an Menschen, die an der Mülldeponie Suwung leben und arbeiten. Zum Abschluss gibt es ein ruhiges Mittagessen im Malaika Secret Home.</p></div>
+        <div class="moment"><p class="label">Klang</p><h3>Klangschalen-Entspannung</h3><p>Am letzten Nachmittag eine Stunde mit Klangschalen am Pool. Danach geht es auf Wunsch zum Sonnenuntergang an den Strand.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band" aria-label="Weitere Eindrücke">
+    <figure class="f-w"><img src="img/tafel.jpg" alt="Die Gruppe an einer langen Tafel im Malaika Secret Home" loading="lazy"><figcaption><b>Gemeinsam</b>Eine Tafel, viele Gespräche</figcaption></figure>
+    <figure class="f-c"><img src="img/schlucht.jpg" alt="Teilnehmende in Sarongs gehen durch eine grüne Schlucht zum Wasserfall" loading="lazy"><figcaption><b>Unterwegs</b>Der Weg zum Wasserfall</figcaption></figure>
+    <figure class="f-full"><img src="img/gruppe-ausschnitt.jpg" alt="Teilnehmende in violetten Sarongs vor einem balinesischen Haus" loading="lazy" style="object-position:50% 25%"><figcaption><b>Melukat</b>Bereit für die Wasserzeremonie</figcaption></figure>
+  </div>
+
+  <section class="section" id="stimmen">
+    <div class="wrap">
+      <p class="label">Stimmen aus dem Oktober 2026</p>
+      <h2>Was unsere Gäste danach geschrieben haben.</h2>
+      <div class="voices">
+        <figure class="voice v-gold"><blockquote>„Was ich in dieser Woche erleben durfte, war weit mehr als ein Retreat.“</blockquote><figcaption>Tanja</figcaption></figure>
+        <figure class="voice v-violet"><blockquote>„Ich glaube, das Besondere war nicht nur das, was wir gemeinsam erlebt haben, sondern vor allem der Raum, den wir füreinander geöffnet haben.“</blockquote><figcaption>Katharina</figcaption></figure>
+        <figure class="voice v-jungle"><blockquote>„Für mich war es […] ein Sprung ins kalte Wasser. Aber genau das war wichtig und richtig für mich.“</blockquote><figcaption>Christian</figcaption></figure>
+        <figure class="voice"><blockquote>„Es ist vielleicht das schönste, intensivste und emotionalste Erlebnis meines Lebens.“</blockquote><figcaption>Tanja</figcaption></figure>
+        <figure class="voice v-gold"><blockquote>„Diese Tage auf Bali, einfach unbezahlbar und unvergesslich. Wir sind zu einer Einheit geworden. […] Es war magisch.“</blockquote><figcaption>Katharina</figcaption></figure>
+        <figure class="voice v-violet"><blockquote>„Es ist wie Familie.“</blockquote><figcaption>Aus einem Interview nach dem Retreat</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="label">Das Team im Februar 2027</p>
+      <h2>Fünf, die etwas davon verstehen.</h2>
+      <div class="team">
+        <div class="person"><div class="initial" aria-hidden="true">D</div><p class="label">Bewegung · vor Ort</p><h3>Danny Paul Kiehl</h3><p>Sportwissenschaftler, zertifiziert im Functional Movement Screen. Er macht am ersten Programmtag einen Fitness-Check mit dir und wiederholt ihn am letzten.</p></div>
+        <div class="person"><div class="initial" aria-hidden="true">S</div><p class="label">Yoga und Meditation · vor Ort</p><h3>Stefan Schleich-Kehr</h3><p>Unterrichtet seit über fünfzehn Jahren, für Anfänger wie für Geübte.</p></div>
+        <div class="person"><div class="initial" aria-hidden="true">T</div><p class="label">Coaching · vor Ort</p><h3>Tatjana Brünjes</h3><p>Sie führt vertrauliche Einzelgespräche. Die Termine sind begrenzt und werden vor Ort nach Anmeldung vergeben.</p></div>
+        <div class="person"><div class="initial" aria-hidden="true">V</div><p class="label">Ernährung · zugeschaltet</p><h3>Dr. Volker Manz</h3><p>Ernährungswissenschaftler und Co-Autor von „Was können wir überhaupt noch essen?“. Er erklärt Studienlagen verständlich und sagt ehrlich, wo die Forschung dünn ist.</p></div>
+        <div class="person"><div class="initial" aria-hidden="true">D</div><p class="label">Medizin · zugeschaltet</p><h3>Dr. med. Delia Francia</h3><p>Ärztin und Rons Gesprächspartnerin in zehn Podcastfolgen rund um Longevity. Sie erklärt, was die Medizin heute weiß, welche Untersuchungen sinnvoll sind und wovon sie abrät.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section host">
+    <div class="wrap">
+      <img src="img/ron.jpg" alt="Ron Perduss begrüßt die Gruppe mit gefalteten Händen" loading="lazy">
+      <div style="display:grid;gap:18px;min-width:0">
+        <p class="label">Dein Gastgeber</p>
+        <h2>Ron Perduss</h2>
+        <p>Verbraucherjournalist, bekannt aus Radio und Fernsehen. Ron prüft seit vielen Jahren, ob Produkte halten, was Anbieter versprechen. Er hat das Retreat ins Leben gerufen und ist die ganze Woche dabei.</p>
+        <p><a href="https://www.instagram.com/longevity_retreat_asia/" target="_blank" rel="noopener">Das Retreat auf Instagram: @longevity_retreat_asia</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="unterkunft">
+    <div class="wrap">
+      <p class="label">Wo du wohnst</p>
+      <h2>Grün Canggu.</h2>
+      <p class="lead">Ein privates Resort im Süden Balis, mit viel Holz, Glas und Grün. Für die Gruppe haben wir ein Zimmerkontingent geblockt.</p>
+      <div class="facts">
+        <div class="fact"><p class="label">Longevity-Villa</p><h3>Doppelzimmer</h3><p>In unserer Villa mit Garten und Pool.</p></div>
+        <div class="fact"><p class="label">Baumhaus</p><h3>Ein eigenes Haus</h3><p>Über mehrere Ebenen, mitten im Grün.</p></div>
+        <div class="fact"><p class="label">Suite oder Private Villa</p><h3>Mehr Platz</h3><p>Die Private Villa hat einen eigenen Pool.</p></div>
+      </div>
+      <p class="price-note">Die ganze Woche kostet <b>ab 200 € pro Person</b>, je nach Zimmer bis etwa 350 €.</p>
+    </div>
+  </section>
+
+  <div class="band" aria-label="Das Grün Canggu">
+    <figure class="f-w"><img src="img/gruen-villa.jpg" alt="Garten mit Pool und Liegen vor der Longevity-Villa" loading="lazy"><figcaption><b>Longevity-Villa</b>Garten und Pool</figcaption></figure>
+    <figure class="f-c"><img src="img/gruen-baumhaus.jpg" alt="Baumhaus aus Holz auf Stelzen zwischen Palmen" loading="lazy"><figcaption><b>Baumhaus</b>Wohnen über mehrere Ebenen</figcaption></figure>
+  </div>
+
+  <section class="section" id="termin">
+    <div class="wrap">
+      <p class="label">Termin und Preis</p>
+      <h2>Das nächste Retreat: Februar 2027.</h2>
+      <div class="facts">
+        <div class="fact"><p class="label">Termin</p><h3>2. bis 9. Februar 2027</h3></div>
+        <div class="fact"><p class="label">Ort</p><h3>Grün Canggu, Bali</h3></div>
+        <div class="fact"><p class="label">Plätze</p><h3>höchstens 20</h3></div>
+      </div>
+      <h3 class="pl-title">Preisliste</h3>
+      <table class="pricelist">
+        <thead><tr><th scope="col">Leistung</th><th scope="col">Preis pro Person</th></tr></thead>
+        <tbody>
+          <tr class="main"><td><b>Programm</b><span>Sieben Tage mit Frühstück und Abendessen, Training, Yoga, Coaching, Vorträgen, Workshops und Ausflügen</span></td><td>1.390 €</td></tr>
+          <tr class="sub"><td colspan="2">Dazu kommt die Unterkunft im Grün Canggu, sieben Nächte:</td></tr>
+          <tr><td>Doppelzimmer in der Longevity-Villa</td><td>ab 200 €</td></tr>
+          <tr><td>Baumhaus, Suite oder Private Villa mit Pool</td><td>bis etwa 350 €</td></tr>
+        </tbody>
+      </table>
+      <p class="price-note">Alle Preise in Euro pro Person, inklusive Steuern. Die Zimmerpreise gelten für sieben Nächte bei Doppelbelegung. Den genauen Preis für dein Zimmer nennen wir dir mit deiner Zimmerwahl.</p>
+      <div class="included">
+        <div>
+          <h3>Im Programmpreis enthalten</h3>
+          <ul>
+            <li>Frühstück jeden Tag, Abendessen an allen Abenden außer dem freien Samstag, gekocht vom Koch in der Villa</li>
+            <li>Meditation und Yoga am Morgen, an fünf Tagen</li>
+            <li>Training mit Fitness-Check am ersten und am letzten Programmtag</li>
+            <li>Einzelcoaching nach Anmeldung vor Ort, die Termine sind begrenzt</li>
+            <li>Online-Vorträge von Fachleuten zu Ernährung und Medizin, als allgemeine Information</li>
+            <li>Melukat in Griya Beji und Rescue Kitchen bei SOS Bali, jeweils mit Mittagessen</li>
+            <li>Jamu-Workshop und Kochkurs in der Villa, Abend am Feuer, Klangschalen-Entspannung</li>
+            <li>Fahrten zu den Ausflügen</li>
+            <li>Yoga-Ausrüstung und das Begleitheft zum Retreat</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Nicht enthalten</h3>
+          <ul>
+            <li>Unterkunft (siehe oben)</li>
+            <li>Flug nach Denpasar und Flughafentransfer</li>
+            <li>Visum und Reiseversicherung</li>
+            <li>Mittagessen an Tagen ohne Ausflug und das Abendessen am freien Samstag</li>
+            <li>Persönliche Ausgaben</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band" aria-label="Details">
+    <figure class="f-b"><img src="img/ringelblumen.jpg" alt="Eine Schale umrahmt von orangefarbenen Ringelblumen" loading="lazy"><figcaption><b>Canang</b>Blumen als tägliche Opfergabe</figcaption></figure>
+    <figure class="f-a"><img src="img/opfergabe.jpg" alt="Hände halten eine kleine Opfergabe aus Blüten" loading="lazy"><figcaption><b>Vor der Zeremonie</b>Jede und jeder bringt eine Gabe</figcaption></figure>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="label">Praktisches</p>
+      <h2>Was du wissen musst.</h2>
+      <div class="faq">
+        <details><summary>Muss ich sportlich sein?</summary><p>Nein. Das Programm ist für unterschiedliche Fitnesslevel gedacht, und die Übungen werden an dein Niveau angepasst.</p></details>
+        <details><summary>Kann ich allein kommen?</summary><p>Ja, gern. Im Oktober kannten sich die meisten vorher nicht.</p></details>
+        <details><summary>Wie komme ich hin?</summary><p>Ziel ist der Flughafen Denpasar (DPS). Von Deutschland aus fliegst du meist mit einem Umstieg, zum Beispiel über Dubai, Doha oder Singapur. Je nach Verbindung dauert die Reise rund 16 bis 18 Stunden. Den Flug buchst du selbst.</p></details>
+        <details><summary>Brauche ich ein Visum?</summary><p>Deutsche Staatsangehörige bekommen derzeit ein Visum bei der Einreise. Der Reisepass muss noch mindestens sechs Monate gültig sein. Die Regeln ändern sich gelegentlich, bitte vor der Reise beim <a href="https://www.auswaertiges-amt.de/de/reiseundsicherheit/indonesiensicherheit-212396" target="_blank" rel="noopener">Auswärtigen Amt</a> prüfen.</p></details>
+        <details><summary>Wie ist das Wetter im Februar?</summary><p>Februar ist auf Bali Regenzeit. Das heißt meist kurze, kräftige Schauer, oft am Nachmittag, danach ist es wieder warm. Rechne mit rund 28 Grad und hoher Luftfeuchtigkeit.</p></details>
+        <details><summary>Was ist mit Unverträglichkeiten?</summary><p>Sag uns bei der Anmeldung Bescheid. Wir klären dann mit der Küche, was möglich ist.</p></details>
+        <details><summary>Wo wohne ich?</summary><p>Im Grün Canggu. Für die Gruppe haben wir dort ein Zimmerkontingent geblockt. Die Woche kostet ab 200 € pro Person, je nach Zimmer bis etwa 350 €.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="kontakt">
+    <div class="wrap">
+      <div style="display:grid;gap:18px;min-width:0">
+        <p class="label">Der nächste Schritt</p>
+        <h2>Wenn du dabei sein möchtest.</h2>
+        <p class="lead">Schreib Ron über das Anfrageformular. Wir melden uns persönlich bei dir und klären alles Weitere, gern auch am Telefon. Die Plätze sind auf 20 begrenzt.</p>
+        <p class="alt-mail">Lieber per Mail? <a href="mailto:ron@perduss.media?subject=Longevity%20Retreat%20Bali%20Februar%202027">ron@perduss.media</a></p>
+      </div>
+      <div class="formbox">
+        <div style="display:grid;gap:16px;padding:28px;border:1px solid var(--line);border-radius:6px">
+          <h3>Interesse anmelden</h3>
+          <p>Das Anfrageformular dauert etwa zwei Minuten. Es öffnet sich in einem neuen Fenster bei Microsoft Forms.</p>
+          <a class="btn" style="justify-self:start" href="https://forms.office.com/Pages/ResponsePage.aspx?id=_X6_Cfp9H0Kzkm-sSgySlnoJncp9ZzxCob-ai0VCfs1UNTgyNFdNQVM2MzhXUzI5QTJLMlhZWFY4Uy4u" target="_blank" rel="noopener">Zum Anfrageformular</a>
+          <p class="form-fallback">Was mit deinen Angaben passiert, steht in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="closing">Wir müssen nicht perfekt werden.<br>Aber wir können anfangen.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Longevity Retreat Bali · Ron Perduss · perduss media Ltd.</span>
+    <span>Fotos: Longevity Retreat Bali 2026</span>
+    <span><a href="https://www.instagram.com/longevity_retreat_asia/" target="_blank" rel="noopener">Instagram</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+  </div>
+</footer>
+</body>
+</html>
