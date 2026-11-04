@@ -110,10 +110,10 @@ a{color:inherit}
 .team .person:last-child:nth-child(odd){grid-column:1/-1}
 .moments .moment:last-child:nth-child(odd){grid-column:1/-1}
 .host{background:var(--jungle);color:var(--on-dark)}
-.host .wrap{display:grid;grid-template-columns:1fr;max-width:760px;gap:clamp(28px,6vw,72px);align-items:center}
+.host .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(28px,6vw,72px);align-items:center}
 .host .label{color:#c8d4c4}
 .host p{color:#dfe7dc}
-.host img{border-radius:4px;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;width:100%;max-height:640px}
+.host img{border-radius:4px;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;width:100%;max-height:640px}
 
 /* Termin & Preis */
 .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px;border-top:2px solid var(--fg)}
@@ -171,6 +171,14 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
   .slot + .slot{padding-left:0;border-left:0;border-top:1px solid var(--line)}
   .band{grid-template-columns:1fr}
 }
+/* Wissen aus dem Begleitheft */
+.know{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:0;margin-top:40px;border-top:1px solid var(--line)}
+.tip{display:grid;gap:10px;align-content:start;padding:26px 24px 30px 0;border-bottom:1px solid var(--line);min-width:0}
+.tip .big{font-family:var(--display);font-size:2.6rem;line-height:1;color:var(--violet)}
+.tip h3{font-size:1.25rem}
+.tip p{color:var(--muted)}
+.tip .try{color:var(--fg);font-size:.95rem;border-left:2px solid var(--marigold);padding-left:12px}
+.know-note{margin-top:24px;color:var(--muted);font-size:.92rem;max-width:44em}
 /* Stimmen der Gäste */
 .voices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px;margin-top:36px}
 .voice{margin:0;padding:28px 26px;border-radius:4px;background:var(--surface);display:grid;gap:18px;align-content:space-between}
@@ -208,6 +216,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
         <h2>Mehr Lebensqualität. Nicht nur mehr Lebenszeit.</h2>
         <div class="prose">
           <p>Wie lange wir leben, ist nur die eine Frage. Die andere ist, wie viele dieser Jahre wir in guter Verfassung verbringen.</p>
+          <p>Die Lebensspanne beschreibt, wie lange wir leben. Die Gesundheitsspanne, englisch Healthspan, meint die Jahre, die wir bei guter Gesundheit verbringen. Um die zweite Zahl geht es in dieser Woche: Du lernst Gewohnheiten rund um Bewegung, Ernährung und Erholung kennen und probierst sie aus.</p>
           <p>Vieles davon entscheidet sich im Alltag: wie wir uns bewegen, essen, schlafen und mit Stress umgehen.</p>
           <p>In dieser Woche bekommst du verständliches Wissen dazu und die Zeit, es auszuprobieren, bevor der Alltag wieder da ist.</p>
         </div>
@@ -312,12 +321,29 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     </div>
   </section>
 
+  <section class="section" id="wissen">
+    <div class="wrap">
+      <p class="label">Aus dem Begleitheft</p>
+      <h2>Sechs Dinge, die du schon vorher wissen kannst.</h2>
+      <p class="lead">Alle Gäste bekommen ein gedrucktes Begleitheft. Mehrere Kapitel sind mit dem Team entstanden, das dich in der Woche begleitet. Hier sechs Anregungen daraus, zum Lesen und Ausprobieren.</p>
+      <div class="know">
+        <div class="tip"><p class="label">Bewegung</p><p class="big">613 Min.</p><h3>Sitzzeit an einem Werktag.</h3><p>So viel Sitzzeit gaben Erwachsene in Deutschland im DKV-Report 2025 im Schnitt an, also gut zehn Stunden. Sitzen ist nicht das neue Rauchen, wie es oft heißt. Weniger sitzen und mehr Bewegung im Alltag lohnen sich trotzdem.</p><p class="try">Unterbrich lange Sitzphasen. Stell dir zum Beispiel eine Erinnerung, jede Stunde aufzustehen und ein paar Schritte zu gehen. Sportkleidung brauchst du dafür nicht.</p></div>
+        <div class="tip"><p class="label">Muskeln</p><p class="big">ab 30</p><h3>Muskelmasse kann langsam abnehmen.</h3><p>Bei vielen Menschen beginnt das etwa ab dem 30. Lebensjahr. Wann und wie stark, ist sehr unterschiedlich. Krafttraining kann dem entgegenwirken, auch im höheren Alter. Muskeln tragen dich durch den Alltag und speichern Energie in Form von Glykogen.</p></div>
+        <div class="tip"><p class="label">Balance</p><p class="big">1 Bein</p><h3>Eine kleine Gleichgewichtsübung.</h3><p>Für das Gleichgewicht verarbeitet das Gehirn Informationen aus den Augen, dem Innenohr und dem ganzen Körper. Gleichgewicht lässt sich üben, und es lässt nach, wenn wir es nie fordern.</p><p class="try">Stell dich neben eine stabile Arbeitsplatte, an der du dich festhalten kannst. Heb einen Fuß leicht an und bleib so lange stehen, wie du dich sicher fühlst.</p></div>
+        <div class="tip"><p class="label">Atmung</p><p class="big">4 : 6–8</p><h3>Länger aus- als einatmen.</h3><p>Langsames, bewusstes Atmen kann helfen, zur Ruhe zu kommen. Eine Wunderwaffe gegen Stress ist es nicht. Aber du hast es immer dabei, vor einem Gespräch genauso wie nachts um drei.</p><p class="try">Setz dich bequem hin. Atme etwa vier Sekunden ein und lass die Ausatmung länger werden, sechs bis acht Sekunden, wenn es angenehm ist. Erzwinge nichts. Wird dir schwindelig, atme normal weiter.</p></div>
+        <div class="tip"><p class="label">Ernährung</p><p class="big">10 Min.</p><h3>Nach dem Essen eine Runde gehen.</h3><p>Ein kurzer Spaziergang nach dem Essen kann den Anstieg des Blutzuckers danach verringern. Untersucht wurde das unter anderem bei Menschen mit Typ-2-Diabetes. Zehn Minuten sind ein Vorschlag für den Alltag, keine feste Grenze.</p><p class="try">Achte auch auf genug Eiweiß und verteile es auf mehrere Mahlzeiten. Für gesunde Menschen ab 65 empfiehlt die DGE pro Kilogramm Körpergewicht etwas mehr als für Jüngere.</p></div>
+        <div class="tip"><p class="label">Okinawa</p><p class="big">80 %</p><h3>Auf die eigene Sättigung achten.</h3><p>Auf Okinawa kennt man die Essensregel Hara Hachi Bu: Hör auf, wenn du ungefähr zu achtzig Prozent satt bist. Das ist eine alte Faustregel und kein messbarer Gesundheitswert.</p><p class="try">Iss langsam und halte zwischendurch kurz inne. Bist du noch hungrig oder nur noch nicht voll?</p></div>
+      </div>
+      <p class="know-note">Die Informationen hier und im Begleitheft dienen der allgemeinen Orientierung. Sie ersetzen keine ärztliche Beratung. Wenn du Beschwerden hast, lass ärztlich abklären, welche Übungen für dich passen.</p>
+    </div>
+  </section>
+
   <section class="section">
     <div class="wrap">
       <p class="label">Das Team im Februar 2027</p>
       <h2>Fünf, die etwas davon verstehen.</h2>
       <div class="team">
-        <div class="person"><div class="initial" aria-hidden="true">D</div><p class="label">Bewegung · vor Ort</p><h3>Danny Paul Kiehl</h3><p>Sportwissenschaftler, zertifiziert im Functional Movement Screen. Er macht am ersten Programmtag einen Fitness-Check mit dir und wiederholt ihn am letzten.</p></div>
+        <div class="person"><div class="initial" aria-hidden="true">D</div><p class="label">Bewegung · vor Ort</p><h3>Danny Paul Kiel</h3><p>Sportwissenschaftler, zertifiziert im Functional Movement Screen. Er macht am ersten Programmtag einen Fitness-Check mit dir und wiederholt ihn am letzten.</p></div>
         <div class="person"><div class="initial" aria-hidden="true">S</div><p class="label">Yoga und Meditation · vor Ort</p><h3>Stefan Schleich-Kehr</h3><p>Unterrichtet seit über fünfzehn Jahren, für Anfänger wie für Geübte.</p></div>
         <div class="person"><div class="initial" aria-hidden="true">T</div><p class="label">Coaching · vor Ort</p><h3>Tatjana Brünjes</h3><p>Sie führt vertrauliche Einzelgespräche. Die Termine sind begrenzt und werden vor Ort nach Anmeldung vergeben.</p></div>
         <div class="person"><div class="initial" aria-hidden="true">V</div><p class="label">Ernährung · zugeschaltet</p><h3>Dr. Volker Manz</h3><p>Ernährungswissenschaftler und Co-Autor von „Was können wir überhaupt noch essen?“. Er erklärt Studienlagen verständlich und sagt ehrlich, wo die Forschung dünn ist.</p></div>
@@ -328,6 +354,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 
   <section class="section host">
     <div class="wrap">
+      <img src="img/ron-malaika.jpg" alt="Ron Perduss spricht beim Mittagessen im Malaika Secret Home zur Gruppe" loading="lazy">
       <div style="display:grid;gap:18px;min-width:0">
         <p class="label">Dein Gastgeber</p>
         <h2>Ron Perduss</h2>
