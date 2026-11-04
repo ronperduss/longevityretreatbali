@@ -86,18 +86,11 @@ a{color:inherit}
 .day-note{margin-top:28px;color:var(--muted);max-width:40em}
 
 /* Fotoband */
-.band{display:grid;grid-template-columns:repeat(12,1fr);gap:8px;padding-inline:8px}
-.band figure{margin:0;position:relative;overflow:hidden;background:var(--surface);min-width:0}
+.band{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding-inline:8px}
+.band figure{margin:0;position:relative;overflow:hidden;background:var(--surface);min-width:0;aspect-ratio:4/3}
 .band img{width:100%;height:100%;object-fit:cover}
 .band figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 12px;color:#f4f6f1;font-size:.85rem;background:linear-gradient(180deg,transparent,rgba(11,20,16,.78))}
 .band figcaption b{display:block;font-family:var(--mono);font-weight:500;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#f0c27a;margin-bottom:2px}
-.f-a{grid-column:span 5;aspect-ratio:4/5}
-.f-b{grid-column:span 7;aspect-ratio:7/5}
-.f-c{grid-column:span 4;aspect-ratio:4/5}
-.f-d{grid-column:span 4;aspect-ratio:4/5}
-.f-e{grid-column:span 4;aspect-ratio:4/5}
-.f-w{grid-column:span 8;aspect-ratio:16/10}
-.f-full{grid-column:1/-1;aspect-ratio:2/1}
 .price-note{margin-top:28px;font-size:1.1rem}
 .price-note b{color:var(--violet)}
 .band + .band{margin-top:8px}
@@ -117,7 +110,7 @@ a{color:inherit}
 .team .person:last-child:nth-child(odd){grid-column:1/-1}
 .moments .moment:last-child:nth-child(odd){grid-column:1/-1}
 .host{background:var(--jungle);color:var(--on-dark)}
-.host .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(28px,6vw,72px);align-items:center}
+.host .wrap{display:grid;grid-template-columns:1fr;max-width:760px;gap:clamp(28px,6vw,72px);align-items:center}
 .host .label{color:#c8d4c4}
 .host p{color:#dfe7dc}
 .host img{border-radius:4px;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;width:100%;max-height:640px}
@@ -172,13 +165,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
   .slot:nth-child(n+3){border-top:1px solid var(--line)}
   .facts{grid-template-columns:1fr}
   .fact + .fact{padding-left:0;border-left:0;border-top:1px solid var(--line)}
-  .f-a,.f-b,.f-c,.f-d,.f-e,.f-w{grid-column:span 6;aspect-ratio:4/5}
-  .f-b,.f-w,.f-full{grid-column:span 12;aspect-ratio:3/2}
 }
 @media (max-width:480px){
   .day-grid{grid-template-columns:1fr}
   .slot + .slot{padding-left:0;border-left:0;border-top:1px solid var(--line)}
-  .f-a,.f-c,.f-d,.f-e{grid-column:span 12;aspect-ratio:4/3}
+  .band{grid-template-columns:1fr}
 }
 /* Stimmen der Gäste */
 .voices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px;margin-top:36px}
@@ -230,8 +221,9 @@ footer a{text-decoration:underline;text-underline-offset:3px}
   </section>
 
   <div class="band" aria-label="Eindrücke vom Retreat">
-    <figure class="f-a"><img src="img/melukat.jpg" alt="Teilnehmende in violetten Sarongs sitzen vor einem Quellheiligtum" loading="lazy"><figcaption><b>Melukat</b>Wasserzeremonie in Griya Beji</figcaption></figure>
-    <figure class="f-b"><img src="img/jamu.jpg" alt="Kurkuma, Zitronengras und getrocknete Gewürze auf einem Tisch" loading="lazy"><figcaption><b>Jamu</b>Traditionelles Kräutergetränk, selbst gemörsert</figcaption></figure>
+    <figure><img src="img/melukat.jpg" alt="Teilnehmende in violetten Sarongs sitzen vor einem Quellheiligtum" loading="lazy"><figcaption><b>Melukat</b>Wasserzeremonie in Griya Beji</figcaption></figure>
+    <figure><img src="img/schlucht.jpg" alt="Teilnehmende in Sarongs gehen durch eine grüne Schlucht zum Wasserfall" loading="lazy"><figcaption><b>Unterwegs</b>Der Weg zum Wasserfall</figcaption></figure>
+    <figure><img src="img/jamu.jpg" alt="Kurkuma, Zitronengras und getrocknete Gewürze auf einem Tisch" loading="lazy"><figcaption><b>Jamu</b>Traditionelles Kräutergetränk, selbst gemörsert</figcaption></figure>
   </div>
 
   <section class="section">
@@ -279,9 +271,9 @@ footer a{text-decoration:underline;text-underline-offset:3px}
   </section>
 
   <div class="band" aria-label="Kochen und Essen">
-    <figure class="f-c"><img src="img/moerser.jpg" alt="Hände zerstoßen Gewürze in einem Holzmörser" loading="lazy"><figcaption><b>Jamu</b>Workshop im Oktober 2026</figcaption></figure>
-    <figure class="f-d"><img src="img/suppe.jpg" alt="Kürbissuppe wird in einen ausgehöhlten Kürbis gegossen" loading="lazy"><figcaption><b>Malaika Secret Home</b>Mittagessen im Oktober 2026</figcaption></figure>
-    <figure class="f-e"><img src="img/kokos.jpg" alt="Grüne Trinkkokosnüsse auf einem Holztisch" loading="lazy"><figcaption><b>Kochen</b>Kochkurs im Oktober 2026</figcaption></figure>
+    <figure><img src="img/moerser.jpg" alt="Hände zerstoßen Gewürze in einem Holzmörser" loading="lazy"><figcaption><b>Jamu</b>Workshop im Oktober 2026</figcaption></figure>
+    <figure><img src="img/suppe.jpg" alt="Kürbissuppe wird in einen ausgehöhlten Kürbis gegossen" loading="lazy"><figcaption><b>Malaika Secret Home</b>Mittagessen im Oktober 2026</figcaption></figure>
+    <figure><img src="img/kochkurs.jpg" alt="Teilnehmende schneiden Gemüse an langen Holztischen" loading="lazy"><figcaption><b>Kochen</b>Kochkurs im Oktober 2026</figcaption></figure>
   </div>
 
   <section class="section">
@@ -300,9 +292,9 @@ footer a{text-decoration:underline;text-underline-offset:3px}
   </section>
 
   <div class="band" aria-label="Weitere Eindrücke">
-    <figure class="f-w"><img src="img/tafel.jpg" alt="Die Gruppe an einer langen Tafel im Malaika Secret Home" loading="lazy"><figcaption><b>Gemeinsam</b>Eine Tafel, viele Gespräche</figcaption></figure>
-    <figure class="f-c"><img src="img/schlucht.jpg" alt="Teilnehmende in Sarongs gehen durch eine grüne Schlucht zum Wasserfall" loading="lazy"><figcaption><b>Unterwegs</b>Der Weg zum Wasserfall</figcaption></figure>
-    <figure class="f-full"><img src="img/gruppe-ausschnitt.jpg" alt="Teilnehmende in violetten Sarongs vor einem balinesischen Haus" loading="lazy" style="object-position:50% 25%"><figcaption><b>Melukat</b>Bereit für die Wasserzeremonie</figcaption></figure>
+    <figure><img src="img/tafel.jpg" alt="Die Gruppe an einer langen Tafel im Malaika Secret Home" loading="lazy"><figcaption><b>Gemeinsam</b>Eine Tafel, viele Gespräche</figcaption></figure>
+    <figure><img src="img/gruppe-ausschnitt.jpg" alt="Teilnehmende in violetten Sarongs vor einem balinesischen Haus" loading="lazy" style="object-position:50% 25%"><figcaption><b>Melukat</b>Bereit für die Wasserzeremonie</figcaption></figure>
+    <figure><img src="img/dessert.jpg" alt="Schokoladenkuchen auf einem Teller, daneben der Schriftzug Bali aus Fruchtsoße" loading="lazy"><figcaption><b>Malaika Secret Home</b>Dessert zum Mittagessen</figcaption></figure>
   </div>
 
   <section class="section" id="stimmen">
@@ -336,7 +328,6 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 
   <section class="section host">
     <div class="wrap">
-      <img src="img/ron.jpg" alt="Ron Perduss begrüßt die Gruppe mit gefalteten Händen" loading="lazy">
       <div style="display:grid;gap:18px;min-width:0">
         <p class="label">Dein Gastgeber</p>
         <h2>Ron Perduss</h2>
@@ -361,8 +352,9 @@ footer a{text-decoration:underline;text-underline-offset:3px}
   </section>
 
   <div class="band" aria-label="Das Grün Canggu">
-    <figure class="f-w"><img src="img/gruen-villa.jpg" alt="Garten mit Pool und Liegen vor der Longevity-Villa" loading="lazy"><figcaption><b>Longevity-Villa</b>Garten und Pool</figcaption></figure>
-    <figure class="f-c"><img src="img/gruen-baumhaus.jpg" alt="Baumhaus aus Holz auf Stelzen zwischen Palmen" loading="lazy"><figcaption><b>Baumhaus</b>Wohnen über mehrere Ebenen</figcaption></figure>
+    <figure><img src="img/gruen-villa.jpg" alt="Garten mit Pool und Liegen vor der Longevity-Villa" loading="lazy"><figcaption><b>Longevity-Villa</b>Garten und Pool</figcaption></figure>
+    <figure><img src="img/gruen-zimmer.jpg" alt="Schlafzimmer mit Doppelbett und Blick in den Garten" loading="lazy"><figcaption><b>Longevity-Villa</b>Ein Schlafzimmer der Villa</figcaption></figure>
+    <figure><img src="img/gruen-baumhaus.jpg" alt="Baumhaus aus Holz auf Stelzen zwischen Palmen" loading="lazy"><figcaption><b>Baumhaus</b>Wohnen über mehrere Ebenen</figcaption></figure>
   </div>
 
   <section class="section" id="termin">
@@ -415,8 +407,9 @@ footer a{text-decoration:underline;text-underline-offset:3px}
   </section>
 
   <div class="band" aria-label="Details">
-    <figure class="f-b"><img src="img/ringelblumen.jpg" alt="Eine Schale umrahmt von orangefarbenen Ringelblumen" loading="lazy"><figcaption><b>Canang</b>Blumen als tägliche Opfergabe</figcaption></figure>
-    <figure class="f-a"><img src="img/opfergabe.jpg" alt="Hände halten eine kleine Opfergabe aus Blüten" loading="lazy"><figcaption><b>Vor der Zeremonie</b>Jede und jeder bringt eine Gabe</figcaption></figure>
+    <figure><img src="img/ringelblumen.jpg" alt="Eine Schale umrahmt von orangefarbenen Ringelblumen" loading="lazy"><figcaption><b>Canang</b>Blumen als tägliche Opfergabe</figcaption></figure>
+    <figure><img src="img/opfergabe.jpg" alt="Hände halten eine kleine Opfergabe aus Blüten" loading="lazy"><figcaption><b>Vor der Zeremonie</b>Jede und jeder bringt eine Gabe</figcaption></figure>
+    <figure><img src="img/kokos.jpg" alt="Grüne Trinkkokosnüsse auf einem Holztisch" loading="lazy"><figcaption><b>Kokosnuss</b>Frisch zum Trinken</figcaption></figure>
   </div>
 
   <section class="section">
