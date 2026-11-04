@@ -110,10 +110,10 @@ a{color:inherit}
 .team .person:last-child:nth-child(odd){grid-column:1/-1}
 .moments .moment:last-child:nth-child(odd){grid-column:1/-1}
 .host{background:var(--jungle);color:var(--on-dark)}
-.host .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(28px,6vw,72px);align-items:center}
+.host .wrap{display:grid;grid-template-columns:1fr;max-width:760px;gap:clamp(28px,6vw,72px);align-items:center}
 .host .label{color:#c8d4c4}
 .host p{color:#dfe7dc}
-.host img{border-radius:4px;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;width:100%;max-height:640px}
+.host img{border-radius:4px;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;width:100%;max-height:640px}
 
 /* Termin & Preis */
 .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px;border-top:2px solid var(--fg)}
@@ -171,14 +171,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
   .slot + .slot{padding-left:0;border-left:0;border-top:1px solid var(--line)}
   .band{grid-template-columns:1fr}
 }
-/* Wissen aus dem Begleitheft */
-.know{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:0;margin-top:40px;border-top:1px solid var(--line)}
-.tip{display:grid;gap:10px;align-content:start;padding:26px 24px 30px 0;border-bottom:1px solid var(--line);min-width:0}
-.tip .big{font-family:var(--display);font-size:2.6rem;line-height:1;color:var(--violet)}
-.tip h3{font-size:1.25rem}
-.tip p{color:var(--muted)}
-.tip .try{color:var(--fg);font-size:.95rem;border-left:2px solid var(--marigold);padding-left:12px}
-.know-note{margin-top:24px;color:var(--muted);font-size:.92rem;max-width:44em}
 /* Stimmen der Gäste */
 .voices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px;margin-top:36px}
 .voice{margin:0;padding:28px 26px;border-radius:4px;background:var(--surface);display:grid;gap:18px;align-content:space-between}
@@ -216,7 +208,6 @@ footer a{text-decoration:underline;text-underline-offset:3px}
         <h2>Mehr Lebensqualität. Nicht nur mehr Lebenszeit.</h2>
         <div class="prose">
           <p>Wie lange wir leben, ist nur die eine Frage. Die andere ist, wie viele dieser Jahre wir in guter Verfassung verbringen.</p>
-          <p>Fachleute unterscheiden dafür zwei Zahlen. Die Lebensspanne (Lifespan) zählt alle Jahre. Die Gesundheitsspanne (Healthspan) zählt nur die Jahre, in denen wir selbstständig und in guter Verfassung leben. Zwischen beiden liegen in Deutschland viele Jahre. Um diese Lücke geht es in der Woche.</p>
           <p>Vieles davon entscheidet sich im Alltag: wie wir uns bewegen, essen, schlafen und mit Stress umgehen.</p>
           <p>In dieser Woche bekommst du verständliches Wissen dazu und die Zeit, es auszuprobieren, bevor der Alltag wieder da ist.</p>
         </div>
@@ -321,23 +312,6 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     </div>
   </section>
 
-  <section class="section" id="wissen">
-    <div class="wrap">
-      <p class="label">Aus dem Begleitheft</p>
-      <h2>Sechs Dinge, die du schon vorher wissen kannst.</h2>
-      <p class="lead">Alle Gäste bekommen ein gedrucktes Begleitheft. Es entstand mit dem Team, das dich in der Woche begleitet. Hier ein paar Gedanken daraus, zum Lesen und Ausprobieren.</p>
-      <div class="know">
-        <div class="tip"><p class="label">Bewegung</p><p class="big">613 Min.</p><h3>So lange sitzen wir an einem Werktag.</h3><p>Laut DKV-Report 2025 sitzen Menschen in Deutschland an einem Werktag im Schnitt mehr als zehn Stunden. Sitzen ist nicht das neue Rauchen. Aber es zählt, wie oft du die Sitzzeit unterbrichst.</p><p class="try">Steh jede Stunde kurz auf und geh ein paar Schritte. Das kostet keine Zeit und keine Sportkleidung.</p></div>
-        <div class="tip"><p class="label">Muskeln</p><p class="big">ab 30</p><h3>Die Muskelmasse nimmt langsam ab.</h3><p>Ab etwa dem 30. Lebensjahr baut der Körper bei vielen Menschen Muskeln ab, wenn keine Gegenreize kommen. Muskeln sind Kraftreserve, Zuckerspeicher und Sturzschutz. Sie reagieren auf Belastung, und zwar in jedem Alter.</p></div>
-        <div class="tip"><p class="label">Balance</p><p class="big">1 Bein</p><h3>Der einfachste Test der Welt.</h3><p>Gleichgewicht entsteht im Zusammenspiel von Augen, Innenohr und Tausenden Sensoren in Muskeln und Gelenken. Es lässt sich trainieren und baut ab, wenn man es nicht fordert.</p><p class="try">Stell dich auf ein Bein. Wie lange bleibst du ruhig stehen? Und mit geschlossenen Augen? Der Unterschied zeigt, wie sehr du dich auf die Augen verlässt.</p></div>
-        <div class="tip"><p class="label">Atmung</p><p class="big">4 : 6–8</p><h3>Länger aus- als einatmen.</h3><p>Eine lange Ausatmung kann das Nervensystem beruhigen und dir helfen, schneller in die Erholung zu finden. Keine Atemtechnik senkt das Stresshormon auf Knopfdruck, aber du hast sie immer dabei.</p><p class="try">Vier Sekunden ein, sechs bis acht Sekunden aus. Ein paar Mal hintereinander, im Auto, vor einem Gespräch oder nachts um drei.</p></div>
-        <div class="tip"><p class="label">Ernährung</p><p class="big">10 Min.</p><h3>Nach dem Essen eine Runde gehen.</h3><p>Ein kurzer Spaziergang nach der Mahlzeit ist eine der am besten untersuchten einfachen Maßnahmen für einen ruhigeren Blutzuckerverlauf. Dazu Protein über den Tag verteilen, statt alles abends zu essen. Mit dem Alter braucht der Körper eher mehr davon, nicht weniger.</p></div>
-        <div class="tip"><p class="label">Blue Zones</p><p class="big">80 %</p><h3>Satt werden, aber nicht voll.</h3><p>Auf Okinawa heißt die Regel Hara Hachi Bu: essen, bis man zu achtzig Prozent satt ist. In Regionen mit auffällig vielen sehr alten Menschen kommt vor allem Pflanzliches auf den Tisch, dazu Hülsenfrüchte, Olivenöl und Fisch. Gegessen wird gemeinsam und ohne Hast.</p></div>
-      </div>
-      <p class="know-note">Das Wissen hier und im Heft soll dir helfen, deinen Körper besser zu verstehen. Es ersetzt keine ärztliche Beratung. Wer Beschwerden hat, lässt sie abklären.</p>
-    </div>
-  </section>
-
   <section class="section">
     <div class="wrap">
       <p class="label">Das Team im Februar 2027</p>
@@ -354,7 +328,6 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 
   <section class="section host">
     <div class="wrap">
-      <img src="img/ron-malaika.jpg" alt="Ron Perduss spricht beim Mittagessen im Malaika Secret Home zur Gruppe" loading="lazy">
       <div style="display:grid;gap:18px;min-width:0">
         <p class="label">Dein Gastgeber</p>
         <h2>Ron Perduss</h2>
