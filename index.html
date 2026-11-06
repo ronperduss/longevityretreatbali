@@ -180,6 +180,12 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 .tip p{color:var(--muted)}
 .tip .try{color:var(--fg);font-size:.95rem;border-left:2px solid var(--marigold);padding-left:12px}
 .know-note{margin-top:24px;color:var(--muted);font-size:.92rem;max-width:44em}
+/* Gäste-Videos */
+.clips{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(210px,1fr);gap:14px;margin-top:32px;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:10px}
+.clip{margin:0;min-width:0;scroll-snap-align:start}
+.clip video{display:block;width:100%;aspect-ratio:9/16;border-radius:4px;background:var(--jungle)}
+.clip figcaption{margin-top:12px;font-family:var(--display);font-size:1.08rem;line-height:1.25}
+@media (min-width:900px){.clips{grid-auto-columns:minmax(0,1fr);overflow:visible}}
 /* Stimmen der Gäste */
 .voices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px;margin-top:36px}
 .voice{margin:0;padding:28px 26px;border-radius:4px;background:var(--surface);display:grid;gap:18px;align-content:space-between}
@@ -210,6 +216,21 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 </header>
 
 <main>
+  <section class="section" id="gaeste-videos">
+    <div class="wrap">
+      <p class="label">Stimmen aus dem Oktober 2026</p>
+      <h2>Hör dir an, wie es war.</h2>
+      <p class="lead">Fünf Gäste, gefragt während unserer Woche auf Bali im Oktober 2026.</p>
+      <div class="clips">
+        <figure class="clip"><video controls playsinline preload="none" poster="video/gast-1.jpg" aria-label="Interview mit einem Gast: „… und dass ich definitiv wiederkomme.“"><source src="video/gast-1.mp4" type="video/mp4"></video><figcaption>„… und dass ich definitiv wiederkomme.“</figcaption></figure>
+        <figure class="clip"><video controls playsinline preload="none" poster="video/gast-2.jpg" aria-label="Interview mit einem Gast: „Du hast zwar Programm, aber keinen Stress.“"><source src="video/gast-2.mp4" type="video/mp4"></video><figcaption>„Du hast zwar Programm, aber keinen Stress.“</figcaption></figure>
+        <figure class="clip"><video controls playsinline preload="none" poster="video/gast-3.jpg" aria-label="Interview mit einem Gast: „Mir geht es richtig gut hier.“"><source src="video/gast-3.mp4" type="video/mp4"></video><figcaption>„Mir geht es richtig gut hier.“</figcaption></figure>
+        <figure class="clip"><video controls playsinline preload="none" poster="video/gast-4.jpg" aria-label="Interview mit einem Gast: „Das will man am nächsten Tag gar nicht missen.“"><source src="video/gast-4.mp4" type="video/mp4"></video><figcaption>„Das will man am nächsten Tag gar nicht missen.“</figcaption></figure>
+        <figure class="clip"><video controls playsinline preload="none" poster="video/gast-5.jpg" aria-label="Interview mit einem Gast: „Es ist ein Geschenk, was wir alles hier erleben dürfen.“"><source src="video/gast-5.mp4" type="video/mp4"></video><figcaption>„Es ist ein Geschenk, was wir alles hier erleben dürfen.“</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="wrap gap-grid">
       <div style="display:grid;gap:22px;min-width:0">
@@ -316,7 +337,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
         <figure class="voice v-jungle"><blockquote>„Für mich war es […] ein Sprung ins kalte Wasser. Aber genau das war wichtig und richtig für mich.“</blockquote><figcaption>Christian</figcaption></figure>
         <figure class="voice"><blockquote>„Es ist vielleicht das schönste, intensivste und emotionalste Erlebnis meines Lebens.“</blockquote><figcaption>Tanja</figcaption></figure>
         <figure class="voice v-gold"><blockquote>„Diese Tage auf Bali, einfach unbezahlbar und unvergesslich. Wir sind zu einer Einheit geworden. […] Es war magisch.“</blockquote><figcaption>Katharina</figcaption></figure>
-        <figure class="voice v-violet"><blockquote>„Es ist wie Familie.“</blockquote><figcaption>Aus einem Interview nach dem Retreat</figcaption></figure>
+        <figure class="voice v-violet"><blockquote>„Es ist wie Familie.“</blockquote><figcaption>Aus einem Interview während des Retreats</figcaption></figure>
       </div>
     </div>
   </section>
@@ -506,5 +527,6 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     <span><a href="https://www.instagram.com/longevity_retreat_asia/" target="_blank" rel="noopener">Instagram</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
   </div>
 </footer>
+<script>document.querySelectorAll('.clip video').forEach(function(v,_,a){v.addEventListener('play',function(){a.forEach(function(o){if(o!==v)o.pause()})})})</script>
 </body>
 </html>
