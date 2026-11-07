@@ -159,8 +159,18 @@ details p{padding:0 0 20px;color:var(--muted);max-width:40em}
 footer{padding-block:36px;color:var(--muted);font-size:.88rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
 
+.offers{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:44px}
+.offer{border:1px solid var(--line);border-top:3px solid var(--violet);padding:22px 22px 24px;display:grid;gap:10px;align-content:start;background:var(--surface)}
+.offer .label{color:var(--violet)}
+.offer .rates{display:grid;gap:4px;margin:4px 0}
+.offer .rates div{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding:6px 0}
+.offer .rates b{white-space:nowrap;text-align:right}
+.offer .rates small{font-weight:400;color:var(--muted)}
+.offer ul{margin:0;padding-left:1.1em;color:var(--muted);font-size:.98rem}
+.offer .book{font-size:.98rem}
+
 @media (max-width:860px){
-  .gap-grid,.two-lists,.moments,.team,.host .wrap,.contact .wrap,.included{grid-template-columns:1fr}
+  .gap-grid,.two-lists,.moments,.team,.host .wrap,.contact .wrap,.included,.offers{grid-template-columns:1fr}
   .day-grid{grid-template-columns:1fr 1fr}
   .slot:nth-child(3){padding-left:0;border-left:0}
   .slot:nth-child(n+3){border-top:1px solid var(--line)}
@@ -211,7 +221,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     <p class="lead">Eine Woche auf Bali rund um das große Thema Longevity und seine Säulen: Bewegung, Ernährung, Medizin und Miteinander. Dich erwarten Yoga und Meditation am Morgen, Training und Online-Vorträge von Fachleuten aus Ernährung und Medizin. Dazu die Wasserzeremonie Melukat, eine Feuerzeremonie, Sound Healing und ein Vormittag in einer Hilfsküche für Menschen in Not. Auch das Essen in der Villa ist die ganze Woche auf Longevity ausgerichtet.</p>
     <div class="hero-row">
       <a class="btn" href="#kontakt">Interesse anmelden</a>
-      <span class="date-chip">2. bis 9. Februar 2027 · Programm 1.390 €, Unterkunft ab 390 € pro Woche · <a href="#verlaengerung" style="color:inherit">zweite Woche möglich</a></span>
+      <span class="date-chip">2. bis 9. Februar 2027 · Programm 1.390 €, Unterkunft ab 390 € pro Woche · <a href="#hotelangebote" style="color:inherit">zweite Woche mit Hotel-Sonderpreisen</a></span>
     </div>
   </div>
 </header>
@@ -488,10 +498,18 @@ footer a{text-decoration:underline;text-underline-offset:3px}
         <div class="fact"><p class="label">Ostküste</p><h3>Sanur</h3><p>Strandpromenade und ruhiges Meer.</p></div>
         <div class="fact"><p class="label">Westküste</p><h3>Canggu</h3><p>Surfstrände, Cafés und Reisfelder.</p></div>
         <div class="fact"><p class="label">Inselinneres</p><h3>Ubud</h3><p>Reisfelder, Tempel und Kunsthandwerk.</p></div>
-        <div class="fact"><p class="label">Die Woche im Hotel</p><h3>unter 390 €</h3><p>Pro Zimmer und sieben Nächte, mit Pool und Frühstück, vier Sterne laut Booking.com.</p></div>
+        <div class="fact"><p class="label">Die Woche im Hotel</p><h3>ab rund 185 €</h3><p>Pro Zimmer und sieben Nächte, mit Frühstück. Sonderpreise für unsere Gäste, siehe unten.</p></div>
       </div>
-      <p class="price-note">Die Preise haben wir im November 2026 auf Booking.com für die Wochen vor und nach dem Retreat geprüft. Sie können sich ändern.</p>
-      <p class="price-note">Die zusätzliche Woche gehört nicht zum Retreat. Das Hotel buchst und bezahlst du selbst, direkt beim Haus oder über ein Buchungsportal. Wir fragen gerade Hotels nach Sonderkonditionen für unsere Gäste. Vereinbart ist noch nichts, im persönlichen Gespräch sagen wir dir den aktuellen Stand.</p>
+      <h3 class="pl-title" id="hotelangebote">Unsere Hotelangebote für 9. bis 16. Februar 2027</h3>
+      <p class="lead">Diese Hotels haben uns Sonderpreise für Gäste unseres Retreats genannt. Sie gelten nur für die Woche danach, vom 9. bis 16. Februar 2027, pro Zimmer für sieben Nächte. Für die Woche davor fragen wir gerade an.</p>
+      <div class="offers">
+        <div class="offer"><p class="label">Sanur</p><h3>Akana Boutique Hotel</h3><p>Kleines Boutiquehotel mit 36 Zimmern, etwa 1,7 km vom Zentrum von Sanur.</p><div class="rates"><div><span>Deluxe Pool View, Balkon zum Pool</span><b>rund 337 €<br><small>7,0 Mio. IDR</small></b></div><div><span>Deluxe Pool Access, Terrasse mit Zugang zum Pool</span><b>rund 438 €<br><small>9,1 Mio. IDR</small></b></div></div><ul><li>Frühstück, Steuern und Service inklusive</li><li>Eine Nacht Anzahlung pro Zimmer, nicht erstattbar, den Rest zahlst du beim Check-in</li></ul><p class="book"><b>So buchst du:</b> per Mail an <a href="mailto:reservation@akanasanur.com">reservation@akanasanur.com</a>, Stichwort „Longevity Retreat Bali“.</p></div>
+        <div class="offer"><p class="label">Sanur</p><h3>Taman Agung Hotel</h3><p>Etwa 600 m vom Zentrum von Sanur. Die Deluxe-Zimmer liegen in verschiedenen Gebäuden, manche klassisch, manche modern eingerichtet.</p><div class="rates"><div><span>Deluxe, Doppel- oder zwei Einzelbetten</span><b>rund 236 €<br><small>4,9 Mio. IDR</small></b></div></div><ul><li>Frühstück inklusive</li><li>Flughafentransfer gegen Aufpreis</li><li>Anzahlung per Überweisung. Bei Storno gibt es sie nicht zurück, du kannst sie aber für eine spätere Buchung nutzen</li></ul><p class="book"><b>So buchst du:</b> per Mail an <a href="mailto:info@tamanagunghotel.com">info@tamanagunghotel.com</a> oder per WhatsApp an +62 812 3928 1546, Stichwort „Longevity Retreat Bali“.</p></div>
+        <div class="offer"><p class="label">Canggu</p><h3>Casa Amarta</h3><p>Etwa 1,4 km vom Zentrum von Canggu.</p><div class="rates"><div><span>Studio für zwei</span><b>rund 185 €<br><small>3,85 Mio. IDR</small></b></div><div><span>Deluxe für bis zu drei</span><b>rund 252 €<br><small>5,25 Mio. IDR</small></b></div></div><ul><li>Frühstück, Steuern, Service und WLAN inklusive</li><li>Begrüßungsgetränk und ein Atlas Day Pass gratis</li><li>30 % Rabatt auf Massagen im hauseigenen Wellnessbereich</li><li>Später Check-out und Upgrade, wenn frei</li><li>50 % Anzahlung, nicht erstattbar, den Rest zahlst du bei Ankunft</li></ul><p class="book"><b>So buchst du:</b> per Mail an <a href="mailto:hello@casaamarta.com">hello@casaamarta.com</a> oder per WhatsApp an +62 813 8228 8669, mit dem Code <b>DIRECT2027</b>.</p></div>
+        <div class="offer"><p class="label">Ubud</p><h3>Kahayana Suites</h3><p>Etwa 5 km außerhalb des Zentrums von Ubud.</p><div class="rates"><div><span>Deluxe ohne Aussicht</span><b>rund 261 €<br><small>5,425 Mio. IDR</small></b></div><div><span>Deluxe mit Blick auf den Pool</span><b>rund 294 €<br><small>6,125 Mio. IDR</small></b></div><div><span>Junior Suite</span><b>rund 421 €<br><small>8,75 Mio. IDR</small></b></div><div><span>Suite mit Blick auf den Pool</span><b>rund 471 €<br><small>9,8 Mio. IDR</small></b></div></div><ul><li>Gleicher Preis für eine oder zwei Personen, Frühstück für zwei, Steuern und Service inklusive</li><li>Kostenlose Fahrt ins Zentrum von Ubud, donnerstags bis sonntags nach Fahrplan</li><li>Canang-Kurs, das sind die kleinen balinesischen Opfergaben, jeden Donnerstag</li><li>Kostenlos stornierbar, wenn du mehr als 45 Tage vor Anreise absagst</li></ul><p class="book"><b>So buchst du:</b> das klären wir gerade mit dem Hotel. Es nennt als Frist den 15. November 2026, wir fragen nach, ob sie auch für einzelne Gäste gilt. Bis dahin frag uns gern.</p></div>
+      </div>
+      <p class="price-note">Maßgeblich ist der Preis in Rupiah. Die Euro-Beträge sind gerundet, umgerechnet mit 20.800 Rupiah je Euro, deine Bank kann anders umrechnen. Alles gilt nur, solange Zimmer frei sind.</p>
+      <p class="price-note">Die zusätzliche Woche gehört nicht zum Retreat. Das Hotel buchst und bezahlst du selbst, direkt beim Haus. Weitere Hotels haben noch nicht geantwortet, neue Angebote ergänzen wir hier.</p>
     </div>
   </section>
 
@@ -512,7 +530,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
         <details><summary>Brauche ich ein Visum?</summary><p>Deutsche Staatsangehörige bekommen derzeit ein Visum bei der Einreise. Der Reisepass muss noch mindestens sechs Monate gültig sein. Die Regeln ändern sich gelegentlich, bitte vor der Reise beim <a href="https://www.auswaertiges-amt.de/de/reiseundsicherheit/indonesiensicherheit-212396" target="_blank" rel="noopener">Auswärtigen Amt</a> prüfen.</p></details>
         <details><summary>Wie ist das Wetter im Februar?</summary><p>Februar ist auf Bali Regenzeit. Das heißt meist kurze, kräftige Schauer, oft am Nachmittag, danach ist es wieder warm. Rechne mit rund 28 Grad und hoher Luftfeuchtigkeit.</p></details>
         <details><summary>Was ist mit Unverträglichkeiten?</summary><p>Sag uns bei der Anmeldung Bescheid. Wir klären dann mit der Küche, was möglich ist.</p></details>
-        <details><summary>Kann ich länger bleiben?</summary><p>Ja, viele verbinden das Retreat mit Urlaub. <a href="#verlaengerung">Hier</a> steht, was eine zweite Woche in Sanur, Canggu oder Ubud kostet. Das Hotel buchst du selbst.</p></details>
+        <details><summary>Kann ich länger bleiben?</summary><p>Ja, viele verbinden das Retreat mit Urlaub. <a href="#hotelangebote">Hier</a> stehen die Sonderpreise von Hotels in Sanur, Canggu und Ubud. Das Hotel buchst du selbst, direkt beim Haus.</p></details>
         <details><summary>Wo wohne ich?</summary><p>Im Grün Canggu. Für die Gruppe haben wir dort ein Zimmerkontingent geblockt. Die Unterkunft kostet ab 390 € pro Woche.</p></details>
       </div>
     </div>
