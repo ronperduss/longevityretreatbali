@@ -109,6 +109,9 @@ a{color:inherit}
 .person .label{color:var(--muted)}
 .person p{color:var(--muted);font-size:.98rem}
 .team .person:last-child:nth-child(odd){grid-column:1/-1}
+.team-videos{margin-top:32px}
+.host video{border-radius:4px;aspect-ratio:9/16;width:100%;max-width:380px;max-height:680px;justify-self:center;background:#0b1410;object-fit:cover}
+
 .moments .moment:last-child:nth-child(odd){grid-column:1/-1}
 .host{background:var(--jungle);color:var(--on-dark)}
 .host .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(28px,6vw,72px);align-items:center}
@@ -395,6 +398,11 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     <div class="wrap">
       <p class="label">Das Team im Februar 2027</p>
       <h2>Das sind unsere Experten.</h2>
+      <div class="clips team-videos">
+        <figure class="clip"><video controls playsinline preload="none" poster="video/team-stefan.jpg" aria-label="Stefan Schleich-Kehr stellt sich vor"><source src="video/team-stefan.mp4" type="video/mp4"></video><figcaption>Stefan · Yoga und Meditation</figcaption></figure>
+        <figure class="clip"><video controls playsinline preload="none" poster="video/team-danny.jpg" aria-label="Danny Paul Kiel stellt sich vor"><source src="video/team-danny.mp4" type="video/mp4"></video><figcaption>Danny · Bewegung</figcaption></figure>
+        <figure class="clip"><video controls playsinline preload="none" poster="video/team-tatjana.jpg" aria-label="Tatjana Brünjes stellt sich vor"><source src="video/team-tatjana.mp4" type="video/mp4"></video><figcaption>Tatjana · Coaching</figcaption></figure>
+      </div>
       <div class="team">
         <div class="person"><img class="portrait" src="img/team-stefan.jpg" alt="" loading="lazy"><p class="label">Yoga und Meditation · vor Ort</p><h3>Stefan Schleich-Kehr</h3><p>Unterrichtet seit über fünfzehn Jahren, für Anfänger wie für Geübte.</p></div>
         <div class="person"><img class="portrait" src="img/team-danny.jpg" alt="" loading="lazy"><p class="label">Bewegung · vor Ort</p><h3>Danny Paul Kiel</h3><p>Sportwissenschaftler, zertifiziert im Functional Movement Screen. Er macht am ersten Programmtag einen Fitness-Check mit dir und wiederholt ihn am letzten.</p></div>
@@ -407,7 +415,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 
   <section class="section host">
     <div class="wrap">
-      <img src="img/ron-malaika.jpg" alt="Ron Perduss spricht beim Mittagessen im Malaika Secret Home zur Gruppe" loading="lazy">
+      <video controls playsinline preload="none" poster="video/team-ron.jpg" aria-label="Ron Perduss stellt das Retreat vor"><source src="video/team-ron.mp4" type="video/mp4"></video>
       <div style="display:grid;gap:18px;min-width:0">
         <p class="label">Dein Gastgeber</p>
         <h2>Ron Perduss</h2>
@@ -569,6 +577,6 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     <span><a href="https://www.instagram.com/longevity_retreat_asia/" target="_blank" rel="noopener">Instagram</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
   </div>
 </footer>
-<script>document.querySelectorAll('.clip video').forEach(function(v,_,a){v.addEventListener('play',function(){a.forEach(function(o){if(o!==v)o.pause()})})})</script>
+<script>document.querySelectorAll('.clip video, .host video').forEach(function(v,_,a){v.addEventListener('play',function(){a.forEach(function(o){if(o!==v)o.pause()})})})</script>
 </body>
 </html>
