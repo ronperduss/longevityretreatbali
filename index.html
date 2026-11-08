@@ -230,6 +230,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 .chapter h2{font-size:clamp(2.4rem,6vw,4.2rem)}
 .chapter .lead{color:#efeaf7}
 .chapter a{color:#f0c27a}
+.place .tile{aspect-ratio:16/10;background:var(--jungle);color:#f4f6f1;display:grid;place-items:center;font-family:var(--display);font-size:clamp(2rem,5vw,3.2rem)}
 .ph{display:grid;place-items:center;text-align:center;padding:16px;border:2px dashed var(--marigold);background:var(--surface);color:var(--muted);font-family:var(--mono);font-size:.82rem;letter-spacing:.04em;height:100%}
 .week{margin-top:36px;border-top:1px solid var(--line);max-width:880px}
 .week div{display:grid;grid-template-columns:8.5em 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
@@ -313,15 +314,15 @@ footer a{text-decoration:underline;text-underline-offset:3px}
           </div>
         </div>
         <div class="place">
-          <div class="ph">Foto folgt: Mangosteen Resort (Bildrechte anfragen)</div>
+          <div class="tile" aria-hidden="true">Phuket</div>
           <div class="in">
             <p class="label">Option 2 · Thailand</p>
             <h3>4. bis 11. Mai 2027</h3>
             <ul>
-              <li>Mangosteen Ayurveda &amp; Wellness Resort in Rawai, im Süden von Phuket</li>
+              <li>Ein Wellness-Resort in Rawai, im ruhigen Süden von Phuket</li>
               <li>Segen der Mönche, Abendgebet im Tempel, Big Buddha</li>
               <li>Besuch der Soi Dog Foundation und ein freier Tag für eigene Ausflüge</li>
-              <li><span class="tbd">Preis folgt</span></li>
+              <li>Programm 1.490 €, Unterkunft ab rund 405 € pro Woche</li>
             </ul>
             <a class="btn" href="#thailand">Mehr zu Thailand</a>
           </div>
@@ -388,14 +389,14 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     <div class="wrap">
       <p class="label">Ernährung</p>
       <h2>Die ganze Woche auf Longevity ausgerichtet.</h2>
-      <p class="lead">Was auf den Tisch kommt, gehört bei uns zum Programm. Frühstück und Abendessen richten sich nach dem, was du in dieser Woche über Ernährung liest und hörst. Auf Bali kocht unser Koch in der Villa, in Thailand die Küche des Resorts. <span class="tbd">Thailand: mit Resort abstimmen</span></p>
+      <p class="lead">Was auf den Tisch kommt, gehört bei uns zum Programm. Frühstück und Abendessen richten sich nach dem, was du in dieser Woche über Ernährung liest und hörst. Auf Bali kocht unser Koch in der Villa, in Thailand die Küche des Resorts.</p>
       <div class="moments">
         <div class="moment"><p class="label">Auf dem Teller</p><h3>Überwiegend pflanzlich</h3><p>Viel Gemüse und Hülsenfrüchte, dazu Nüsse, gute Öle und Fisch, wenig zugesetzter Zucker und Weißmehl. Zum Frühstück und zum Abendessen gibt es jeweils eine Eiweißquelle.</p></div>
         <div class="moment"><p class="label">Im Vortrag</p><h3>Wissen mit Dr. Volker Manz</h3><p>Der Ernährungswissenschaftler erklärt, was die Forschung zu Ernährung und Langlebigkeit zeigt und wo sie noch dünn ist.</p></div>
         <div class="moment"><p class="label">In der Küche</p><h3>Selbst zubereiten</h3><p>Im Kochkurs kochst du mit, auf Bali mörserst du außerdem im Jamu-Workshop frische Wurzeln und Gewürze. Die Rezepte stehen in deinem Begleitheft.</p></div>
         <div class="moment"><p class="label">Am Tisch</p><h3>Zusammen und ohne Hast</h3><p>Wir essen gemeinsam und nehmen uns dafür Zeit. Frühstück und Abendessen gibt es zu festen Zeiten.</p></div>
       </div>
-      <p class="price-note">Frühstück und Abendessen sind enthalten, auf Bali außer am freien Samstagabend. Mittags sorgst du meist selbst für dich, eine Liste mit Lokalen in der Nähe bekommst du von uns. Welche Mittagessen bei Ausflügen dabei sind, steht in der Leistungsliste.</p>
+      <p class="price-note">Auf Bali sind Frühstück und Abendessen im Programmpreis enthalten, außer am freien Samstagabend. In Thailand ist das Frühstück im Zimmerpreis enthalten und das Abendessen im Programmpreis. Mittags sorgst du meist selbst für dich, eine Liste mit Lokalen in der Nähe bekommst du von uns. Welche Mittagessen bei Ausflügen dabei sind, steht in der Leistungsliste.</p>
     </div>
   </section>
 
@@ -499,6 +500,24 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     <figure><img src="img/gruppe-ausschnitt.jpg" alt="Teilnehmende in violetten Sarongs vor einem balinesischen Haus" loading="lazy" style="object-position:50% 25%"><figcaption><b>Melukat</b>Bereit für die Wasserzeremonie</figcaption></figure>
     <figure><img src="img/dessert.jpg" alt="Schokoladenkuchen auf einem Teller, daneben der Schriftzug Bali aus Fruchtsoße" loading="lazy"><figcaption><b>Malaika Secret Home</b>Dessert zum Mittagessen</figcaption></figure>
   </div>
+
+  <section class="section day">
+    <div class="wrap">
+      <p class="label">Die Woche auf Bali</p>
+      <h2>Acht Tage auf einen Blick.</h2>
+      <div class="week">
+        <div><b>Di 2. Feb</b><span>Ankommen, Begrüßungskreis, Einführungsabend</span></div>
+        <div><b>Mi 3. Feb</b><span>Fitness-Check und Training mit Danny, erste Coachings</span></div>
+        <div><b>Do 4. Feb</b><span>Wasserzeremonie Melukat in Griya Beji, Mittagessen in Ubud, Vortrag Ernährung</span></div>
+        <div><b>Fr 5. Feb</b><span>Rescue Kitchen bei SOS Bali in Sanur, Mittagessen im Malaika Secret Home</span></div>
+        <div><b>Sa 6. Feb</b><span>Jamu-Workshop und Kochkurs in der Villa, danach freier Nachmittag</span></div>
+        <div><b>So 7. Feb</b><span>Training, Eisbaden, Coachings, Vortrag Medizin, Feuerzeremonie</span></div>
+        <div><b>Mo 8. Feb</b><span>Fitness-Check 2, Abschlusskreis, Sound Healing, Sonnenuntergang im La Brisa, Abschiedsessen</span></div>
+        <div><b>Di 9. Feb</b><span>Abschluss-Meditation, Abreise</span></div>
+      </div>
+      <p class="day-note">An fünf Morgen Meditation und Yoga mit Stefan, danach Frühstück.</p>
+    </div>
+  </section>
 
   <section class="section" id="unterkunft">
     <div class="wrap">
@@ -607,7 +626,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     <div class="wrap">
       <p class="label">Option 2</p>
       <h2>Thailand im Mai.</h2>
-      <p class="lead">4. bis 11. Mai 2027 im Mangosteen Ayurveda &amp; Wellness Resort in Rawai, im ruhigen Süden von Phuket. Dasselbe Team, derselbe Tagesrhythmus, andere Rituale.</p>
+      <p class="lead">4. bis 11. Mai 2027 in einem Wellness-Resort in Rawai, im ruhigen Süden von Phuket. Programm 1.490 €, Unterkunft ab rund 405 € pro Woche. Dasselbe Team, derselbe Tagesrhythmus, andere Rituale.</p>
     </div>
   </div>
 
@@ -631,12 +650,6 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     </div>
   </section>
 
-  <div class="band" aria-label="Eindrücke aus Thailand">
-    <figure><div class="ph">Foto folgt: Mangosteen Resort</div></figure>
-    <figure><div class="ph">Foto folgt: Big Buddha</div></figure>
-    <figure><div class="ph">Foto folgt: Phang-Nga-Bucht</div></figure>
-  </div>
-
   <section class="section day">
     <div class="wrap">
       <p class="label">Die Woche in Thailand</p>
@@ -658,15 +671,15 @@ footer a{text-decoration:underline;text-underline-offset:3px}
   <section class="section" id="unterkunft-thailand">
     <div class="wrap">
       <p class="label">Wo du in Thailand wohnst</p>
-      <h2>Mangosteen Ayurveda &amp; Wellness Resort.</h2>
-      <p class="lead">Ein Wellness-Resort mit Villen und Zimmern in Rawai, im ruhigen Süden von Phuket, mit Spa, Pool und zwei Räumen für Yoga und Meditation.</p>
+      <h2>Ein Wellness-Resort in Rawai.</h2>
+      <p class="lead">Villen und Zimmer im ruhigen Süden von Phuket, mit Spa, Pool und zwei Räumen für Yoga und Meditation.</p>
       <div class="facts">
-        <div class="fact"><p class="label">Yoga im Freien</p><h3>Prana Sala</h3><p>Ein offener Pavillon aus Teakholz.</p></div>
-        <div class="fact"><p class="label">Yoga drinnen</p><h3>Ananda Room</h3><p>Ein geschlossener Raum mit Klimaanlage, auch bei Regen.</p></div>
+        <div class="fact"><p class="label">Yoga im Freien</p><h3>Offener Pavillon</h3><p>Aus Teakholz, für Yoga an der frischen Luft.</p></div>
+        <div class="fact"><p class="label">Yoga drinnen</p><h3>Geschlossener Raum</h3><p>Mit Klimaanlage, auch bei Regen.</p></div>
         <div class="fact"><p class="label">Erholung</p><h3>Spa und Pool</h3><p>Im Resort, für die freie Zeit.</p></div>
         <div class="fact"><p class="label">Umgebung</p><h3>Rawai</h3><p>Die Strände von Rawai und Nai Harn und das Promthep Cape liegen in der Nähe.</p></div>
       </div>
-      <p class="price-note">Frühstück und Abendessen im Resort sind enthalten. <span class="tbd">Zimmerpreise folgen</span></p>
+      <p class="price-note">Die Unterkunft mit Frühstück kostet pro Person und Woche ab rund <b>405 €</b> im Doppelzimmer mit einem Bett, ab rund 500 € mit getrennten Betten und ab rund 635 € im Einzelzimmer. Das Abendessen ist im Programmpreis enthalten.</p>
     </div>
   </section>
 
@@ -683,15 +696,15 @@ footer a{text-decoration:underline;text-underline-offset:3px}
       <table class="pricelist">
         <thead><tr><th scope="col">Leistung</th><th scope="col">Preis pro Person</th></tr></thead>
         <tbody>
-          <tr class="main"><td><b>Programm</b><span>Sieben Tage mit Training, Yoga, Coaching, Vorträgen, Workshops und Ausflügen</span></td><td><span class="tbd">folgt</span></td></tr>
-          <tr><td>Dazu kommt die Unterkunft im Mangosteen, sieben Nächte mit Frühstück und Abendessen</td><td><span class="tbd">folgt</span></td></tr>
+          <tr class="main"><td><b>Programm</b><span>Sieben Tage mit Abendessen, Training, Yoga, Coaching, Vorträgen, Workshops und Ausflügen</span></td><td>1.490 €</td></tr>
+          <tr><td>Dazu kommt die Unterkunft im Resort, sieben Nächte mit Frühstück</td><td>ab rund 405 €</td></tr>
         </tbody>
       </table>
       <div class="included">
         <div>
           <h3>Im Preis enthalten</h3>
           <ul>
-            <li>Frühstück und Abendessen im Resort</li>
+            <li>Abendessen an allen Abenden, am Sonntag als gemeinsamer Kochkurs</li>
             <li>Meditation und Yoga mit Stefan am Morgen, an fünf Tagen</li>
             <li>Training mit Fitness-Check am ersten und am letzten Programmtag</li>
             <li>Einzelcoaching nach Anmeldung vor Ort, die Termine sind begrenzt</li>
@@ -708,6 +721,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
         <div>
           <h3>Nicht enthalten</h3>
           <ul>
+            <li>Unterkunft mit Frühstück (siehe oben)</li>
             <li>Flug nach Phuket und Flughafentransfer</li>
             <li>Reiseversicherung</li>
             <li>Mittagessen, außer am Ausflugstag in der Altstadt</li>
@@ -733,7 +747,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
         <details><summary>Wie ist das Wetter?</summary><p>Februar ist auf Bali Regenzeit. Das heißt meist kurze, kräftige Schauer, oft am Nachmittag, danach ist es wieder warm. Rechne mit rund 28 Grad und hoher Luftfeuchtigkeit.</p><p>Im Mai ist es auf Phuket heiß und feucht, meist über 30 Grad. Der Mai liegt im Übergang zur Regenzeit, auch Anfang Mai sind kräftige Schauer und Seegang möglich. Bootsausflüge können wetterbedingt kurzfristig ausfallen.</p></details>
         <details><summary>Was ist mit Unverträglichkeiten?</summary><p>Sag uns bei der Anmeldung Bescheid. Wir klären dann mit der Küche, was möglich ist.</p></details>
         <details><summary>Kann ich länger bleiben?</summary><p>Ja, viele verbinden das Retreat mit Urlaub. Für Bali stehen <a href="#hotelangebote">hier</a> die Sonderpreise von Hotels in Sanur, Canggu und Ubud. Das Hotel buchst du selbst, direkt beim Haus.</p></details>
-        <details><summary>Wo wohne ich?</summary><p>Auf Bali im Grün Canggu. Für die Gruppe haben wir dort ein Zimmerkontingent geblockt, die Unterkunft kostet ab 390 € pro Woche. In Thailand im Mangosteen Ayurveda &amp; Wellness Resort in Rawai, mit Frühstück und Abendessen.</p></details>
+        <details><summary>Wo wohne ich?</summary><p>Auf Bali im Grün Canggu. Für die Gruppe haben wir dort ein Zimmerkontingent geblockt, die Unterkunft kostet ab 390 € pro Woche. In Thailand in einem Wellness-Resort in Rawai im Süden von Phuket, ab rund 405 € pro Woche mit Frühstück.</p></details>
       </div>
     </div>
   </section>
