@@ -239,6 +239,16 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 .hero .date-chip a{color:inherit;text-decoration:none}
 @media (max-width:860px){.places{grid-template-columns:1fr}}
 @media (max-width:480px){.week div{grid-template-columns:1fr;gap:2px}}
+/* Sprungleiste */
+.quick{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.quick .wrap{display:flex;align-items:center;gap:6px;overflow-x:auto;scrollbar-width:none;padding-top:10px;padding-bottom:10px}
+.quick .wrap::-webkit-scrollbar{display:none}
+.quick a{flex:none;text-decoration:none;font-size:.92rem;font-weight:600;padding:.45em .9em;border-radius:999px;color:var(--fg);border:1px solid var(--line);white-space:nowrap}
+.quick a:hover{border-color:var(--violet);color:var(--violet)}
+.quick a.cta{background:var(--marigold);border-color:var(--marigold);color:#17251f;margin-left:auto}
+[id]{scroll-margin-top:72px}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -257,6 +267,19 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     </div>
   </div>
 </header>
+
+<nav class="quick" aria-label="Schnell zu">
+  <div class="wrap">
+    <a href="#bali">Bali</a>
+    <a href="#thailand">Thailand</a>
+    <a href="#orte">Preise</a>
+    <a href="#woche-bali">Woche Bali</a>
+    <a href="#woche-thailand">Woche Thailand</a>
+    <a href="#team">Team</a>
+    <a href="#fragen">Fragen</a>
+    <a class="cta" href="#kontakt">Anfrage</a>
+  </div>
+</nav>
 
 <main>
   <section class="section" id="gaeste-videos">
@@ -438,7 +461,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="team">
     <div class="wrap">
       <p class="label">Das Team 2027</p>
       <h2>Das sind unsere Experten.</h2>
@@ -501,7 +524,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     <figure><img src="img/dessert.jpg" alt="Schokoladenkuchen auf einem Teller, daneben der Schriftzug Bali aus Fruchtsoße" loading="lazy"><figcaption><b>Malaika Secret Home</b>Dessert zum Mittagessen</figcaption></figure>
   </div>
 
-  <section class="section day">
+  <section class="section day" id="woche-bali">
     <div class="wrap">
       <p class="label">Die Woche auf Bali</p>
       <h2>Acht Tage auf einen Blick.</h2>
@@ -650,7 +673,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     </div>
   </section>
 
-  <section class="section day">
+  <section class="section day" id="woche-thailand">
     <div class="wrap">
       <p class="label">Die Woche in Thailand</p>
       <h2>Acht Tage auf einen Blick.</h2>
@@ -734,7 +757,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
   </section>
 
 
-  <section class="section">
+  <section class="section" id="fragen">
     <div class="wrap">
       <p class="label">Praktisches</p>
       <h2>Was du wissen musst.</h2>
