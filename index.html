@@ -240,13 +240,17 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 @media (max-width:860px){.places{grid-template-columns:1fr}}
 @media (max-width:480px){.week div{grid-template-columns:1fr;gap:2px}}
 /* Sprungleiste */
-.quick{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.quick .wrap{display:flex;align-items:center;gap:6px;overflow-x:auto;scrollbar-width:none;padding-top:10px;padding-bottom:10px}
+.quick{position:sticky;top:0;z-index:20;background:#5a3d8f;color:#f4f6f1;box-shadow:0 3px 14px rgba(11,20,16,.3)}
+.quick .wrap{display:flex;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none;padding-top:14px;padding-bottom:14px}
 .quick .wrap::-webkit-scrollbar{display:none}
-.quick a{flex:none;text-decoration:none;font-size:.92rem;font-weight:600;padding:.45em .9em;border-radius:999px;color:var(--fg);border:1px solid var(--line);white-space:nowrap}
-.quick a:hover{border-color:var(--violet);color:var(--violet)}
+.quick .hint{flex:none;font-family:var(--mono);font-size:.85rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#f0c27a;margin-right:6px}
+.quick a{flex:none;text-decoration:none;font-size:1rem;font-weight:700;padding:.6em .9em;border-radius:8px;color:#1f3a2e;background:#f4f6f1;border:1px solid #f4f6f1;white-space:nowrap}
+.quick a::after{content:" ↓";opacity:.7}
+.quick a:hover,.quick a:focus-visible{background:#fff;box-shadow:0 0 0 2px #f0c27a}
 .quick a.cta{background:var(--marigold);border-color:var(--marigold);color:#17251f;margin-left:auto}
-[id]{scroll-margin-top:72px}
+.quick a.cta::after{content:" →";opacity:1}
+@media (max-width:700px){.quick .hint{display:none}.quick a{font-size:.98rem}}
+[id]{scroll-margin-top:84px}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -268,8 +272,9 @@ html{scroll-behavior:smooth}
   </div>
 </header>
 
-<nav class="quick" aria-label="Schnell zu">
+<nav class="quick" aria-label="Direkt zu">
   <div class="wrap">
+    <span class="hint">Direkt zu:</span>
     <a href="#bali">Bali</a>
     <a href="#thailand">Thailand</a>
     <a href="#orte">Preise</a>
