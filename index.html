@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Longevity Retreat Bali · 2. bis 9. Februar 2027 · mit Ron Perduss</title>
-<meta name="description" content="Eine Woche auf Bali rund ums gesunde Älterwerden: Yoga, Training, Vorträge, Einzelcoaching, Melukat und ein Vormittag bei SOS Bali. Mit Ron Perduss, 2. bis 9. Februar 2027 im Grün Canggu.">
-<meta property="og:title" content="Longevity Retreat Bali mit Ron Perduss">
-<meta property="og:description" content="Longevity muss kein Luxus sein. 2. bis 9. Februar 2027 im Grün Canggu, Bali. Höchstens 20 Plätze.">
+<title>Longevity Retreat Asien · Bali im Februar, Thailand im Mai 2027 · mit Ron Perduss</title>
+<meta name="description" content="Eine Woche rund ums gesunde Älterwerden mit Ron Perduss: Yoga, Training, Vorträge, Einzelcoaching, Rituale und Ausflüge. 2027 auf Bali (2. bis 9. Februar) oder in Thailand (4. bis 11. Mai).">
+<meta property="og:title" content="Longevity Retreat Asien mit Ron Perduss">
+<meta property="og:description" content="Longevity muss kein Luxus sein. Bali im Februar, Thailand im Mai 2027. Höchstens 20 Plätze.">
 <meta property="og:image" content="img/gruen-villa.jpg">
 <link rel="icon" href="img/favicon.png">
 <link rel="stylesheet" href="fonts/fonts.css">
@@ -215,6 +215,30 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 .voice.v-violet figcaption,.voice.v-jungle figcaption{color:#f0c27a}
 .voice.v-jungle{background:var(--jungle);color:#f4f6f1}
 footer a{text-decoration:underline;text-underline-offset:3px}
+/* Zwei Orte */
+.places{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
+.place{border:1px solid var(--line);background:var(--surface);display:grid;align-content:start;min-width:0}
+.place img,.place .ph{width:100%;aspect-ratio:16/10;object-fit:cover}
+.place .in{padding:22px 24px 26px;display:grid;gap:12px}
+.place .label{color:var(--violet)}
+.place ul{margin:0;padding-left:1.1em;color:var(--muted);display:grid;gap:4px}
+.place .btn{justify-self:start}
+.same{margin-top:28px;max-width:44em;color:var(--muted)}
+.chapter{background:var(--violet);color:#f4f6f1}
+.chapter .wrap{padding-block:clamp(48px,7vw,88px);display:grid;gap:16px}
+.chapter .label{color:#f0c27a}
+.chapter h2{font-size:clamp(2.4rem,6vw,4.2rem)}
+.chapter .lead{color:#efeaf7}
+.chapter a{color:#f0c27a}
+.place .tile{aspect-ratio:16/10;background:var(--jungle);color:#f4f6f1;display:grid;place-items:center;font-family:var(--display);font-size:clamp(2rem,5vw,3.2rem)}
+.ph{display:grid;place-items:center;text-align:center;padding:16px;border:2px dashed var(--marigold);background:var(--surface);color:var(--muted);font-family:var(--mono);font-size:.82rem;letter-spacing:.04em;height:100%}
+.week{margin-top:36px;border-top:1px solid var(--line);max-width:880px}
+.week div{display:grid;grid-template-columns:8.5em 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.week b{font-family:var(--mono);font-size:.85rem;font-weight:500;color:var(--violet)}
+.week span{color:var(--muted)}
+.hero .date-chip a{color:inherit;text-decoration:none}
+@media (max-width:860px){.places{grid-template-columns:1fr}}
+@media (max-width:480px){.week div{grid-template-columns:1fr;gap:2px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -223,12 +247,13 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 <header class="hero">
   <img src="img/pool.jpg" alt="Die Retreat-Gruppe sitzt lachend am Rand eines Wasserbeckens voller Blütenblätter, Füße im Wasser">
   <div class="wrap">
-    <p class="label">Longevity Retreat Bali · mit Ron Perduss</p>
+    <p class="label">Longevity Retreat Asien · mit Ron Perduss</p>
     <h1>Longevity muss kein Luxus sein.</h1>
-    <p class="lead">Gesund älter werden darf keine Frage des Geldes sein. Eine Woche auf Bali rund um das große Thema Longevity und seine Säulen: Bewegung, Ernährung, Medizin und Miteinander. Dich erwarten Yoga und Meditation am Morgen, Training und Online-Vorträge von Fachleuten aus Ernährung und Medizin. Dazu die Wasserzeremonie Melukat, eine Feuerzeremonie, Sound Healing und ein Vormittag in einer Hilfsküche für Menschen in Not. Auch das Essen in der Villa ist die ganze Woche auf Longevity ausgerichtet.</p>
+    <p class="lead">Gesund älter werden darf keine Frage des Geldes sein. Eine Woche rund um das große Thema Longevity und seine Säulen: Bewegung, Ernährung, Medizin und Miteinander. Dich erwarten Yoga und Meditation am Morgen, Training, Einzelcoaching und Online-Vorträge von Fachleuten aus Ernährung und Medizin. Dazu Rituale und Ausflüge, die zum Land gehören, und Essen, das die ganze Woche auf Longevity ausgerichtet ist. 2027 gibt es das Retreat zweimal: auf Bali und in Thailand.</p>
     <div class="hero-row">
       <a class="btn" href="#kontakt">Interesse anmelden</a>
-      <span class="date-chip">2. bis 9. Februar 2027 · Programm 1.390 €, Unterkunft ab 390 € pro Woche · <a href="#hotelangebote" style="color:inherit">zweite Woche mit Hotel-Sonderpreisen</a></span>
+      <span class="date-chip"><a href="#bali">Bali · 2. bis 9. Februar 2027</a></span>
+      <span class="date-chip"><a href="#thailand">Thailand · 4. bis 11. Mai 2027</a></span>
     </div>
   </div>
 </header>
@@ -236,9 +261,9 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 <main>
   <section class="section" id="gaeste-videos">
     <div class="wrap">
-      <p class="label">Stimmen aus dem Oktober 2026</p>
+      <p class="label">Stimmen aus Bali, Oktober 2026</p>
       <h2>Das sagen unsere Gäste.</h2>
-      <p class="lead">Kurze Interviews, aufgenommen während des Retreats im Oktober 2026.</p>
+      <p class="lead">Kurze Interviews, aufgenommen während unseres ersten Retreats im Oktober 2026 auf Bali.</p>
       <div class="clips">
         <figure class="clip"><video controls playsinline preload="none" poster="video/gast-1.jpg" aria-label="Interview mit einem Gast: „… und dass ich definitiv wiederkomme.“"><source src="video/gast-1.mp4" type="video/mp4"></video><figcaption>„… und dass ich definitiv wiederkomme.“</figcaption></figure>
         <figure class="clip"><video controls playsinline preload="none" poster="video/gast-2.jpg" aria-label="Interview mit einem Gast: „Du hast zwar Programm, aber keinen Stress.“"><source src="video/gast-2.mp4" type="video/mp4"></video><figcaption>„Du hast zwar Programm, aber keinen Stress.“</figcaption></figure>
@@ -262,17 +287,55 @@ footer a{text-decoration:underline;text-underline-offset:3px}
         </div>
       </div>
       <div class="numbers" aria-label="Das Retreat in Zahlen">
-        <div><b>6</b><span>volle Programmtage</span></div>
+        <div><b>7</b><span>Nächte, von Dienstag bis Dienstag</span></div>
         <div><b>20</b><span>Teilnehmer:innen höchstens</span></div>
         <div><b>5</b><span>Fachleute im Team, dazu Ron als Gastgeber</span></div>
       </div>
     </div>
   </section>
 
-  <div class="band" aria-label="Eindrücke vom Retreat">
-    <figure><img src="img/melukat.jpg" alt="Teilnehmende in violetten Sarongs sitzen vor einem Quellheiligtum" loading="lazy"><figcaption><b>Melukat</b>Wasserzeremonie in Griya Beji</figcaption></figure>
-    <figure><img src="img/sos.jpg" alt="Teilnehmende mit Haarnetz und Schürze schneiden Gemüse in der Rescue Kitchen von SOS Bali" loading="lazy"><figcaption><b>Gutes tun</b>Rescue Kitchen bei SOS Bali</figcaption></figure>
-    <figure><img src="img/jamu.jpg" alt="Kurkuma, Zitronengras und getrocknete Gewürze auf einem Tisch" loading="lazy"><figcaption><b>Jamu</b>Traditionelles Kräutergetränk, selbst gemörsert</figcaption></figure>
+  <section class="section" id="orte">
+    <div class="wrap">
+      <p class="label">Zwei Orte, ein Retreat</p>
+      <h2>Bali oder Thailand. Du hast die Wahl.</h2>
+      <div class="places">
+        <div class="place">
+          <img src="img/melukat.jpg" alt="Teilnehmende in violetten Sarongs sitzen vor einem Quellheiligtum auf Bali" loading="lazy">
+          <div class="in">
+            <p class="label">Option 1 · Bali</p>
+            <h3>2. bis 9. Februar 2027</h3>
+            <ul>
+              <li>Grün Canggu, ein ruhiges Resort im tropischen Grün</li>
+              <li>Wasserzeremonie Melukat, Feuerzeremonie, Pyramids of Chi</li>
+              <li>Ein Vormittag in der Rescue Kitchen von SOS Bali</li>
+              <li>Programm 1.390 €, Unterkunft ab 390 € pro Woche</li>
+            </ul>
+            <a class="btn" href="#bali">Mehr zu Bali</a>
+          </div>
+        </div>
+        <div class="place">
+          <div class="tile" aria-hidden="true">Phuket</div>
+          <div class="in">
+            <p class="label">Option 2 · Thailand</p>
+            <h3>4. bis 11. Mai 2027</h3>
+            <ul>
+              <li>Ein Wellness-Resort in Rawai, im ruhigen Süden von Phuket</li>
+              <li>Segen der Mönche, Abendgebet im Tempel, Big Buddha</li>
+              <li>Besuch der Soi Dog Foundation und ein freier Tag für eigene Ausflüge</li>
+              <li>Programm 1.490 €, Unterkunft ab rund 405 € pro Woche</li>
+            </ul>
+            <a class="btn" href="#thailand">Mehr zu Thailand</a>
+          </div>
+        </div>
+      </div>
+      <p class="same">Gleich bleiben das Team, der Tagesrhythmus, Yoga und Meditation mit Stefan, Training mit Danny, Coaching und die Vorträge. Anders sind die Rituale und Ausflüge, denn sie gehören zum jeweiligen Land.</p>
+    </div>
+  </section>
+
+  <div class="band" aria-label="Eindrücke aus Bali, Oktober 2026">
+    <figure><img src="img/melukat.jpg" alt="Teilnehmende in violetten Sarongs sitzen vor einem Quellheiligtum" loading="lazy"><figcaption><b>Bali · Melukat</b>Wasserzeremonie in Griya Beji</figcaption></figure>
+    <figure><img src="img/sos.jpg" alt="Teilnehmende mit Haarnetz und Schürze schneiden Gemüse in der Rescue Kitchen von SOS Bali" loading="lazy"><figcaption><b>Bali · Gutes tun</b>Rescue Kitchen bei SOS Bali</figcaption></figure>
+    <figure><img src="img/jamu.jpg" alt="Kurkuma, Zitronengras und getrocknete Gewürze auf einem Tisch" loading="lazy"><figcaption><b>Bali · Jamu</b>Traditionelles Kräutergetränk, selbst gemörsert</figcaption></figure>
   </div>
 
   <section class="section">
@@ -286,8 +349,8 @@ footer a{text-decoration:underline;text-underline-offset:3px}
             <li>Yoga und Meditation</li>
             <li>Wir vermitteln Wissen ohne Fachchinesisch</li>
             <li>Medizin: was die Forschung heute über gesundes Älterwerden weiß, verständlich erklärt</li>
-            <li>Unser Essen in der Villa ist die ganze Woche auf Longevity ausgerichtet, und du lernst viel über Ernährung</li>
-            <li>Wir lernen Bali abseits der Touristenpfade kennen</li>
+            <li>Unser Essen ist die ganze Woche auf Longevity ausgerichtet, und du lernst viel über Ernährung</li>
+            <li>Wir lernen Land und Leute kennen, mit Tempeln, Ritualen und Projekten vor Ort</li>
             <li>Und das alles in einer kleinen Gruppe</li>
           </ul>
         </div>
@@ -308,7 +371,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 
   <section class="section day">
     <div class="wrap">
-      <p class="label">Ein Tag im Retreat</p>
+      <p class="label">Ein Tag auf Bali</p>
       <h2>So sieht ein Tag im Retreat aus.</h2>
       <p class="lead">Zum Beispiel der Tag mit SOS Bali und dem Lunch im Malaika Secret Home.</p>
       <div class="day-grid day-5">
@@ -318,7 +381,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
         <div class="slot"><time>nachmittags</time><h3>Zurück in der Villa</h3><p>Zeit für dich am Pool oder, nach Anmeldung, ein Einzelcoaching mit Tatjana.</p></div>
         <div class="slot"><time>abends</time><h3>Dinner zusammen</h3><p>Wir essen gemeinsam in der Villa und lassen den Tag ausklingen.</p></div>
       </div>
-      <p class="price-note">Nicht jeder Tag ist so voll. An anderen Tagen stehen Training mit Danny, Workshops und Vorträge auf dem Plan, und es bleibt mehr freie Zeit. Für Februar kann sich der Ablauf im Einzelnen ändern.</p>
+      <p class="price-note">Nicht jeder Tag ist so voll. An anderen Tagen stehen Training mit Danny, Workshops und Vorträge auf dem Plan, und es bleibt mehr freie Zeit. In Thailand ist der Rhythmus derselbe. Im Einzelnen kann sich der Ablauf noch ändern.</p>
     </div>
   </section>
 
@@ -326,14 +389,14 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     <div class="wrap">
       <p class="label">Ernährung</p>
       <h2>Die ganze Woche auf Longevity ausgerichtet.</h2>
-      <p class="lead">Was in der Villa auf den Tisch kommt, gehört bei uns zum Programm. Unser Koch richtet Frühstück und Abendessen an dem aus, was du in dieser Woche über Ernährung liest und hörst.</p>
+      <p class="lead">Was auf den Tisch kommt, gehört bei uns zum Programm. Frühstück und Abendessen richten sich nach dem, was du in dieser Woche über Ernährung liest und hörst. Auf Bali kocht unser Koch in der Villa, in Thailand die Küche des Resorts.</p>
       <div class="moments">
         <div class="moment"><p class="label">Auf dem Teller</p><h3>Überwiegend pflanzlich</h3><p>Viel Gemüse und Hülsenfrüchte, dazu Nüsse, gute Öle und Fisch, wenig zugesetzter Zucker und Weißmehl. Zum Frühstück und zum Abendessen gibt es jeweils eine Eiweißquelle.</p></div>
         <div class="moment"><p class="label">Im Vortrag</p><h3>Wissen mit Dr. Volker Manz</h3><p>Der Ernährungswissenschaftler erklärt, was die Forschung zu Ernährung und Langlebigkeit zeigt und wo sie noch dünn ist.</p></div>
-        <div class="moment"><p class="label">In der Küche</p><h3>Selbst zubereiten</h3><p>Im Kochkurs kochst du mit, im Jamu-Workshop mörserst du frische Wurzeln und Gewürze. Die Rezepte stehen in deinem Begleitheft.</p></div>
+        <div class="moment"><p class="label">In der Küche</p><h3>Selbst zubereiten</h3><p>Im Kochkurs kochst du mit, auf Bali mörserst du außerdem im Jamu-Workshop frische Wurzeln und Gewürze. Die Rezepte stehen in deinem Begleitheft.</p></div>
         <div class="moment"><p class="label">Am Tisch</p><h3>Zusammen und ohne Hast</h3><p>Wir essen gemeinsam und nehmen uns dafür Zeit. Frühstück und Abendessen gibt es zu festen Zeiten.</p></div>
       </div>
-      <p class="price-note">Mittags sorgst du an Tagen ohne Ausflug selbst für dich, eine Liste mit Lokalen in der Nähe bekommst du von uns.</p>
+      <p class="price-note">Auf Bali sind Frühstück und Abendessen im Programmpreis enthalten, außer am freien Samstagabend. In Thailand ist das Frühstück im Zimmerpreis enthalten und das Abendessen im Programmpreis. Mittags sorgst du meist selbst für dich, eine Liste mit Lokalen in der Nähe bekommst du von uns. Welche Mittagessen bei Ausflügen dabei sind, steht in der Leistungsliste.</p>
     </div>
   </section>
 
@@ -343,32 +406,9 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     <figure><img src="img/kochkurs.jpg" alt="Teilnehmende schneiden Gemüse an langen Holztischen" loading="lazy"><figcaption><b>Kochen</b>Kochkurs im Oktober 2026</figcaption></figure>
   </div>
 
-  <section class="section">
-    <div class="wrap">
-      <p class="label">Erlebnisse</p>
-      <h2>Das wirst du erleben.</h2>
-      <div class="moments">
-        <div class="moment"><p class="label">Wasser</p><h3>Melukat in Griya Beji</h3><p>Ein balinesisch-hinduistisches Reinigungsritual mit heiligem Wasser bei Ubud. Ibu Sri begleitet die Zeremonie. Ein Moment zum Innehalten, mitten in der Natur.</p></div>
-        <div class="moment"><p class="label">Tradition</p><h3>Jamu-Workshop</h3><p>Jamu ist ein traditionelles Kräutergetränk aus Indonesien und gehört dort seit Generationen zum Alltag. Du bereitest es selbst zu: Du mörserst frische Wurzeln und Gewürze wie Kurkuma und Ingwer und presst sie aus. Ein Fläschchen nimmst du mit.</p></div>
-        <div class="moment"><p class="label">Ernährung</p><h3>Kochkurs</h3><p>Ernährung ist ein wichtiger Baustein für ein langes, gesundes Leben. Im Kochkurs lernst du, frische und gesunde Gerichte selbst zuzubereiten. Danach essen wir zusammen, was wir gekocht haben.</p></div>
-        <div class="moment"><p class="label">Helfen</p><h3>Rescue Kitchen mit SOS Bali</h3><p>Mit der Hilfsorganisation Scholars of Sustenance kochst du in der Gruppe Mahlzeiten aus geretteten Lebensmitteln. Danach verteilt ihr sie an Menschen, die an der Mülldeponie Suwung leben und arbeiten. Etwas für andere zu tun, gehört für uns zu einem guten Leben dazu.</p></div>
-        <div class="moment"><p class="label">Genuss</p><h3>Lunch im Malaika Secret Home</h3><p>Ein besonderes Mittagessen im Malaika Secret Home, einem Restaurant mit einem verwunschenen Garten. Gutes Essen ist auch Genuss und Gemeinschaft.</p></div>
-        <div class="moment"><p class="label">Klang</p><h3>Sound Healing am Pool</h3><p>Eine Stunde mit Klangschalen am Pool, zum Ausklang der Woche. Zeit zum Zuhören und Ausruhen.</p></div>
-        <div class="moment"><p class="label">Ubud</p><h3>Pyramids of Chi</h3><p>Ein Ausflug zu den Pyramids of Chi in Ubud. Du liegst und hörst Gongs und weitere Instrumente, ein Klangerlebnis zum Abschalten.</p></div>
-        <div class="moment"><p class="label">Pflege</p><h3>Facial im Spa</h3><p>Eine kosmetische Behandlung in einem balinesischen Spa, im Programmpreis enthalten. Zeit für deine Haut und zum Entspannen.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="band" aria-label="Weitere Eindrücke">
-    <figure><img src="img/tafel.jpg" alt="Die Gruppe an einer langen Tafel im Malaika Secret Home" loading="lazy"><figcaption><b>Gemeinsam</b>Eine Tafel, viele Gespräche</figcaption></figure>
-    <figure><img src="img/gruppe-ausschnitt.jpg" alt="Teilnehmende in violetten Sarongs vor einem balinesischen Haus" loading="lazy" style="object-position:50% 25%"><figcaption><b>Melukat</b>Bereit für die Wasserzeremonie</figcaption></figure>
-    <figure><img src="img/dessert.jpg" alt="Schokoladenkuchen auf einem Teller, daneben der Schriftzug Bali aus Fruchtsoße" loading="lazy"><figcaption><b>Malaika Secret Home</b>Dessert zum Mittagessen</figcaption></figure>
-  </div>
-
   <section class="section" id="stimmen">
     <div class="wrap">
-      <p class="label">Stimmen aus dem Oktober 2026</p>
+      <p class="label">Stimmen aus Bali, Oktober 2026</p>
       <h2>Was unsere Gäste danach geschrieben haben.</h2>
       <div class="voices">
         <figure class="voice v-gold"><blockquote>„Was ich in dieser Woche erleben durfte, war weit mehr als ein Retreat.“</blockquote><figcaption>Tanja</figcaption></figure>
@@ -400,7 +440,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 
   <section class="section">
     <div class="wrap">
-      <p class="label">Das Team im Februar 2027</p>
+      <p class="label">Das Team 2027</p>
       <h2>Das sind unsere Experten.</h2>
       <div class="clips team-videos">
         <figure class="clip"><video controls playsinline preload="none" poster="video/team-stefan.jpg" aria-label="Stefan Schleich-Kehr stellt sich vor"><source src="video/team-stefan.mp4" type="video/mp4"></video><figcaption>Stefan · Yoga und Meditation</figcaption></figure>
@@ -429,9 +469,59 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     </div>
   </section>
 
+  <div class="chapter" id="bali">
+    <div class="wrap">
+      <p class="label">Option 1</p>
+      <h2>Bali im Februar.</h2>
+      <p class="lead">2. bis 9. Februar 2027 im Grün Canggu. Programm 1.390 €, Unterkunft ab 390 € pro Woche. Wer länger bleibt, bekommt bei vier Hotels <a href="#hotelangebote">Sonderpreise für die Woche danach</a>.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="label">Erlebnisse auf Bali</p>
+      <h2>Das erlebst du auf Bali.</h2>
+      <div class="moments">
+        <div class="moment"><p class="label">Wasser</p><h3>Melukat in Griya Beji</h3><p>Ein balinesisch-hinduistisches Reinigungsritual mit heiligem Wasser bei Ubud. Ibu Sri begleitet die Zeremonie. Ein Moment zum Innehalten, mitten in der Natur.</p></div>
+        <div class="moment"><p class="label">Tradition</p><h3>Jamu-Workshop</h3><p>Jamu ist ein traditionelles Kräutergetränk aus Indonesien und gehört dort seit Generationen zum Alltag. Du bereitest es selbst zu: Du mörserst frische Wurzeln und Gewürze wie Kurkuma und Ingwer und presst sie aus. Ein Fläschchen nimmst du mit.</p></div>
+        <div class="moment"><p class="label">Ernährung</p><h3>Kochkurs</h3><p>Ernährung ist ein wichtiger Baustein für ein langes, gesundes Leben. Im Kochkurs lernst du, frische und gesunde Gerichte selbst zuzubereiten. Danach essen wir zusammen, was wir gekocht haben.</p></div>
+        <div class="moment"><p class="label">Helfen</p><h3>Rescue Kitchen mit SOS Bali</h3><p>Mit der Hilfsorganisation Scholars of Sustenance kochst du in der Gruppe Mahlzeiten aus geretteten Lebensmitteln. Danach verteilt ihr sie an Menschen, die an der Mülldeponie Suwung leben und arbeiten. Etwas für andere zu tun, gehört für uns zu einem guten Leben dazu.</p></div>
+        <div class="moment"><p class="label">Genuss</p><h3>Lunch im Malaika Secret Home</h3><p>Ein besonderes Mittagessen im Malaika Secret Home, einem Restaurant mit einem verwunschenen Garten. Gutes Essen ist auch Genuss und Gemeinschaft.</p></div>
+        <div class="moment"><p class="label">Klang</p><h3>Sound Healing am Pool</h3><p>Eine Stunde mit Klangschalen am Pool, zum Ausklang der Woche. Zeit zum Zuhören und Ausruhen.</p></div>
+        <div class="moment"><p class="label">Ubud</p><h3>Pyramids of Chi</h3><p>Ein Ausflug zu den Pyramids of Chi in Ubud. Du liegst und hörst Gongs und weitere Instrumente, ein Klangerlebnis zum Abschalten.</p></div>
+        <div class="moment"><p class="label">Pflege</p><h3>Facial im Spa</h3><p>Eine kosmetische Behandlung in einem balinesischen Spa, im Programmpreis enthalten. Zeit für deine Haut und zum Entspannen.</p></div>
+        <div class="moment"><p class="label">Kälte</p><h3>Eisbaden mit Danny</h3><p>Wer mag, steigt mit Danny ins Eisbad. Er erklärt vorher, wie du atmest, dann geht es für ein, zwei Minuten ins kalte Wasser. Freiwillig und nach einer kurzen Gesundheitsabfrage.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band" aria-label="Weitere Eindrücke">
+    <figure><img src="img/tafel.jpg" alt="Die Gruppe an einer langen Tafel im Malaika Secret Home" loading="lazy"><figcaption><b>Gemeinsam</b>Eine Tafel, viele Gespräche</figcaption></figure>
+    <figure><img src="img/gruppe-ausschnitt.jpg" alt="Teilnehmende in violetten Sarongs vor einem balinesischen Haus" loading="lazy" style="object-position:50% 25%"><figcaption><b>Melukat</b>Bereit für die Wasserzeremonie</figcaption></figure>
+    <figure><img src="img/dessert.jpg" alt="Schokoladenkuchen auf einem Teller, daneben der Schriftzug Bali aus Fruchtsoße" loading="lazy"><figcaption><b>Malaika Secret Home</b>Dessert zum Mittagessen</figcaption></figure>
+  </div>
+
+  <section class="section day">
+    <div class="wrap">
+      <p class="label">Die Woche auf Bali</p>
+      <h2>Acht Tage auf einen Blick.</h2>
+      <div class="week">
+        <div><b>Di 2. Feb</b><span>Ankommen, Begrüßungskreis, Einführungsabend</span></div>
+        <div><b>Mi 3. Feb</b><span>Fitness-Check und Training mit Danny, erste Coachings</span></div>
+        <div><b>Do 4. Feb</b><span>Wasserzeremonie Melukat in Griya Beji, Mittagessen in Ubud, Vortrag Ernährung</span></div>
+        <div><b>Fr 5. Feb</b><span>Rescue Kitchen bei SOS Bali in Sanur, Mittagessen im Malaika Secret Home</span></div>
+        <div><b>Sa 6. Feb</b><span>Jamu-Workshop und Kochkurs in der Villa, danach freier Nachmittag</span></div>
+        <div><b>So 7. Feb</b><span>Training, Eisbaden, Coachings, Vortrag Medizin, Feuerzeremonie</span></div>
+        <div><b>Mo 8. Feb</b><span>Fitness-Check 2, Abschlusskreis, Sound Healing, Sonnenuntergang im La Brisa, Abschiedsessen</span></div>
+        <div><b>Di 9. Feb</b><span>Abschluss-Meditation, Abreise</span></div>
+      </div>
+      <p class="day-note">An fünf Morgen Meditation und Yoga mit Stefan, danach Frühstück.</p>
+    </div>
+  </section>
+
   <section class="section" id="unterkunft">
     <div class="wrap">
-      <p class="label">Wo du wohnst</p>
+      <p class="label">Wo du auf Bali wohnst</p>
       <h2>Grün Canggu.</h2>
       <p class="lead">Ein privates Resort in der Nähe von Canggu, abgeschieden und ruhig mitten im tropischen Grün. Viel Holz, Glas und Grün, eingebettet in die Natur.</p>
       <div class="facts">
@@ -452,8 +542,8 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 
   <section class="section" id="termin">
     <div class="wrap">
-      <p class="label">Termin und Preis</p>
-      <h2>Das nächste Retreat: Februar 2027.</h2>
+      <p class="label">Bali · Termin und Preis</p>
+      <h2>Bali im Februar 2027.</h2>
       <div class="facts">
         <div class="fact"><p class="label">Termin</p><h3>2. bis 9. Februar 2027</h3></div>
         <div class="fact"><p class="label">Ort</p><h3>Grün Canggu, Bali</h3></div>
@@ -483,6 +573,7 @@ footer a{text-decoration:underline;text-underline-offset:3px}
             <li>Jamu-Workshop, Kochkurs, Feuerzeremonie und Sound Healing am Pool</li>
             <li>Klangerlebnis bei Pyramids of Chi in Ubud</li>
             <li>Ein Facial im Spa</li>
+            <li>Eisbaden mit Danny, freiwillig</li>
             <li>Fahrten zu den Ausflügen</li>
             <li>Yoga-Ausrüstung und das Begleitheft zum Retreat</li>
           </ul>
@@ -531,6 +622,118 @@ footer a{text-decoration:underline;text-underline-offset:3px}
     <figure><img src="img/kokos.jpg" alt="Grüne Trinkkokosnüsse auf einem Holztisch" loading="lazy"><figcaption><b>Kokosnuss</b>Frisch zum Trinken</figcaption></figure>
   </div>
 
+  <div class="chapter" id="thailand">
+    <div class="wrap">
+      <p class="label">Option 2</p>
+      <h2>Thailand im Mai.</h2>
+      <p class="lead">4. bis 11. Mai 2027 in einem Wellness-Resort in Rawai, im ruhigen Süden von Phuket. Programm 1.490 €, Unterkunft ab rund 405 € pro Woche. Dasselbe Team, derselbe Tagesrhythmus, andere Rituale.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="label">Erlebnisse in Thailand</p>
+      <h2>Das erlebst du in Thailand.</h2>
+      <div class="moments">
+        <div class="moment"><p class="label">Segen</p><h3>Mönche im Resort</h3><p>Mönche aus einem Tempel kommen zu uns ins Resort. Wir reichen ihnen das Essen, sie rezitieren und segnen jeden von uns mit einem weißen Faden ums Handgelenk.</p></div>
+        <div class="moment"><p class="label">Feiertag</p><h3>Abendgebet im Tempel</h3><p>Der 5. Mai ist ein buddhistischer Mondtag (Wan Phra), an dem viele Thais in den Tempel gehen. Am Abend hören wir das Gebet der Mönche und meditieren danach gemeinsam.</p></div>
+        <div class="moment"><p class="label">Ausblick</p><h3>Wat Chalong und Big Buddha</h3><p>Der bekannteste Tempel der Insel und die große Buddha-Statue auf dem Nakkerd-Hügel. Dort oben meditieren wir mit Blick über die Insel.</p></div>
+        <div class="moment"><p class="label">Helfen</p><h3>Soi Dog Foundation</h3><p>Ein Tierschutzprojekt im Norden der Insel, das sich um Straßenhunde und -katzen kümmert. Wir besuchen es und übergeben eine Spende der Gruppe.</p></div>
+        <div class="moment"><p class="label">Altstadt</p><h3>Mittag in Phuket Town</h3><p>Nach dem Besuch bei Soi Dog essen wir in der Altstadt zu Mittag und gehen durch die Gassen mit den alten Kaufmannshäusern.</p></div>
+        <div class="moment"><p class="label">Tradition</p><h3>Kräuterstempel binden</h3><p>Im Spa des Resorts zerkleinerst du frische Kräuter und bindest sie zu einem Stempel, wie er bei der Thai-Massage verwendet wird.</p></div>
+        <div class="moment"><p class="label">Ernährung</p><h3>Thai-Kochkurs</h3><p>Du kochst thailändische Gerichte selbst, und was wir gekocht haben, essen wir zusammen zu Abend.</p></div>
+        <div class="moment"><p class="label">Licht</p><h3>Lichterabend</h3><p>Am vorletzten Abend zündet jeder eine Kerze an und nimmt sich eine Sache für zu Hause vor. Danach restoratives Yoga mit Stefan.</p></div>
+        <div class="moment"><p class="label">Klang</p><h3>Klangschalen-Meditation</h3><p>Eine Stunde mit Klangschalen zum Ausklang der Woche. Zeit zum Zuhören und Ausruhen.</p></div>
+        <div class="moment"><p class="label">Kälte</p><h3>Eisbaden mit Danny</h3><p>Wer mag, steigt mit Danny ins Eisbad. Er erklärt vorher, wie du atmest, dann geht es für ein, zwei Minuten ins kalte Wasser. Freiwillig und nach einer kurzen Gesundheitsabfrage.</p></div>
+        <div class="moment"><p class="label">Freiheit</p><h3>Ein freier Tag</h3><p>Am Samstag hast du frei. Wer möchte, fährt zur James-Bond-Insel in der Phang-Nga-Bucht oder zu den Phi-Phi-Inseln. Wir geben dir Tipps für Anbieter mit Abholung am Resort, gebucht und bezahlt wird direkt beim Anbieter. Der Ausflug ist nicht im Preis enthalten.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section day">
+    <div class="wrap">
+      <p class="label">Die Woche in Thailand</p>
+      <h2>Acht Tage auf einen Blick.</h2>
+      <div class="week">
+        <div><b>Di 4. Mai</b><span>Ankommen, Begrüßungskreis, Einführungsabend</span></div>
+        <div><b>Mi 5. Mai</b><span>Fitness-Check und Training mit Danny, erste Coachings, abends Abendgebet im Tempel</span></div>
+        <div><b>Do 6. Mai</b><span>Mönche im Resort, Kräuterstempel-Workshop, Wat Chalong und Big Buddha</span></div>
+        <div><b>Fr 7. Mai</b><span>Soi Dog Foundation, Mittagessen in der Altstadt, Vortrag Ernährung</span></div>
+        <div><b>Sa 8. Mai</b><span>Freier Tag, auf Wunsch Ausflug zur James-Bond-Insel oder zu den Phi-Phi-Inseln</span></div>
+        <div><b>So 9. Mai</b><span>Training, Eisbaden, Coachings, Thai-Kochkurs, Vortrag Medizin, Lichterabend</span></div>
+        <div><b>Mo 10. Mai</b><span>Fitness-Check 2, Abschlusskreis, Klangschalen, Sonnenuntergang am Promthep Cape, Abschiedsessen</span></div>
+        <div><b>Di 11. Mai</b><span>Abschluss-Meditation, Abreise</span></div>
+      </div>
+      <p class="day-note">An fünf Morgen Meditation und Yoga mit Stefan, danach Frühstück. Mittags ist Pause.</p>
+    </div>
+  </section>
+
+  <section class="section" id="unterkunft-thailand">
+    <div class="wrap">
+      <p class="label">Wo du in Thailand wohnst</p>
+      <h2>Ein Wellness-Resort in Rawai.</h2>
+      <p class="lead">Villen und Zimmer im ruhigen Süden von Phuket, mit Spa, Pool und zwei Räumen für Yoga und Meditation.</p>
+      <div class="facts">
+        <div class="fact"><p class="label">Yoga im Freien</p><h3>Offener Pavillon</h3><p>Aus Teakholz, für Yoga an der frischen Luft.</p></div>
+        <div class="fact"><p class="label">Yoga drinnen</p><h3>Geschlossener Raum</h3><p>Mit Klimaanlage, auch bei Regen.</p></div>
+        <div class="fact"><p class="label">Erholung</p><h3>Spa und Pool</h3><p>Im Resort, für die freie Zeit.</p></div>
+        <div class="fact"><p class="label">Umgebung</p><h3>Rawai</h3><p>Die Strände von Rawai und Nai Harn und das Promthep Cape liegen in der Nähe.</p></div>
+      </div>
+      <p class="price-note">Die Unterkunft mit Frühstück kostet pro Person und Woche ab rund <b>405 €</b> im Doppelzimmer mit einem Bett, ab rund 500 € mit getrennten Betten und ab rund 635 € im Einzelzimmer. Das Abendessen ist im Programmpreis enthalten.</p>
+    </div>
+  </section>
+
+  <section class="section" id="termin-thailand">
+    <div class="wrap">
+      <p class="label">Thailand · Termin und Preis</p>
+      <h2>Thailand im Mai 2027.</h2>
+      <div class="facts">
+        <div class="fact"><p class="label">Termin</p><h3>4. bis 11. Mai 2027</h3></div>
+        <div class="fact"><p class="label">Ort</p><h3>Rawai, Phuket</h3></div>
+        <div class="fact"><p class="label">Plätze</p><h3>höchstens 20</h3></div>
+      </div>
+      <h3 class="pl-title">Preisliste</h3>
+      <table class="pricelist">
+        <thead><tr><th scope="col">Leistung</th><th scope="col">Preis pro Person</th></tr></thead>
+        <tbody>
+          <tr class="main"><td><b>Programm</b><span>Sieben Tage mit Abendessen, Training, Yoga, Coaching, Vorträgen, Workshops und Ausflügen</span></td><td>1.490 €</td></tr>
+          <tr><td>Dazu kommt die Unterkunft im Resort, sieben Nächte mit Frühstück</td><td>ab rund 405 €</td></tr>
+        </tbody>
+      </table>
+      <div class="included">
+        <div>
+          <h3>Im Preis enthalten</h3>
+          <ul>
+            <li>Abendessen an allen Abenden, am Sonntag als gemeinsamer Kochkurs</li>
+            <li>Meditation und Yoga mit Stefan am Morgen, an fünf Tagen</li>
+            <li>Training mit Fitness-Check am ersten und am letzten Programmtag</li>
+            <li>Einzelcoaching nach Anmeldung vor Ort, die Termine sind begrenzt</li>
+            <li>Online-Vorträge von Fachleuten zu Ernährung und Medizin</li>
+            <li>Segnung durch Mönche im Resort und Abendgebet im Tempel</li>
+            <li>Wat Chalong und Big Buddha</li>
+            <li>Soi Dog Foundation und Mittagessen in der Altstadt</li>
+            <li>Kräuterstempel-Workshop, Thai-Kochkurs, Lichterabend und Klangschalen-Meditation</li>
+            <li>Eisbaden mit Danny, freiwillig</li>
+            <li>Fahrten zu den Ausflügen</li>
+            <li>Yoga-Ausrüstung und das Begleitheft zum Retreat</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Nicht enthalten</h3>
+          <ul>
+            <li>Unterkunft mit Frühstück (siehe oben)</li>
+            <li>Flug nach Phuket und Flughafentransfer</li>
+            <li>Reiseversicherung</li>
+            <li>Mittagessen, außer am Ausflugstag in der Altstadt</li>
+            <li>Ausflüge am freien Tag</li>
+            <li>Persönliche Ausgaben</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <section class="section">
     <div class="wrap">
       <p class="label">Praktisches</p>
@@ -538,12 +741,13 @@ footer a{text-decoration:underline;text-underline-offset:3px}
       <div class="faq">
         <details><summary>Muss ich sportlich sein?</summary><p>Nein. Das Programm ist für unterschiedliche Fitnesslevel gedacht, und die Übungen werden an dein Niveau angepasst.</p></details>
         <details><summary>Kann ich allein kommen?</summary><p>Ja, gern. Im Oktober kannten sich die meisten vorher nicht.</p></details>
-        <details><summary>Wie komme ich hin?</summary><p>Ziel ist der Flughafen Denpasar (DPS). Von Deutschland aus fliegst du meist mit einem Umstieg, zum Beispiel über Dubai, Doha oder Singapur. Je nach Verbindung dauert die Reise rund 16 bis 18 Stunden. Den Flug buchst du selbst.</p></details>
-        <details><summary>Brauche ich ein Visum?</summary><p>Deutsche Staatsangehörige bekommen derzeit ein Visum bei der Einreise. Der Reisepass muss noch mindestens sechs Monate gültig sein. Die Regeln ändern sich gelegentlich, bitte vor der Reise beim <a href="https://www.auswaertiges-amt.de/de/reiseundsicherheit/indonesiensicherheit-212396" target="_blank" rel="noopener">Auswärtigen Amt</a> prüfen.</p></details>
-        <details><summary>Wie ist das Wetter im Februar?</summary><p>Februar ist auf Bali Regenzeit. Das heißt meist kurze, kräftige Schauer, oft am Nachmittag, danach ist es wieder warm. Rechne mit rund 28 Grad und hoher Luftfeuchtigkeit.</p></details>
+        <details><summary>Bali oder Thailand: Was ist anders?</summary><p>Team, Tagesrhythmus, Trainings, Coachings und Vorträge sind gleich. Anders sind die Rituale und Ausflüge: auf Bali Melukat, Feuerzeremonie und SOS Bali, in Thailand der Segen der Mönche, ein Tempelabend, Soi Dog und ein freier Tag für eigene Ausflüge. Und das Wetter: im Februar Regenzeit auf Bali, im Mai Hitze und der Beginn der Regenzeit auf Phuket.</p></details>
+        <details><summary>Wie komme ich hin?</summary><p>Nach Bali fliegst du zum Flughafen Denpasar (DPS), meist mit einem Umstieg, zum Beispiel über Dubai, Doha oder Singapur. Je nach Verbindung dauert die Reise rund 16 bis 18 Stunden. Nach Thailand fliegst du zum Flughafen Phuket (HKT), ebenfalls meist mit einem Umstieg, zum Beispiel über Bangkok, Dubai oder Doha. Vom Flughafen Phuket bis zum Resort fährt man je nach Verkehr 60 bis 90 Minuten. Den Flug buchst du selbst.</p></details>
+        <details><summary>Brauche ich ein Visum?</summary><p>Für Bali bekommen deutsche Staatsangehörige derzeit ein Visum bei der Einreise. Der Reisepass muss noch mindestens sechs Monate gültig sein. Die Regeln ändern sich gelegentlich, bitte vor der Reise beim <a href="https://www.auswaertiges-amt.de/de/reiseundsicherheit/indonesiensicherheit-212396" target="_blank" rel="noopener">Auswärtigen Amt</a> prüfen.</p><p>Für einen kurzen Urlaub in Thailand brauchen deutsche Staatsangehörige derzeit kein Visum. Wie lange du bleiben darfst und welche Nachweise du brauchst, zum Beispiel für den Rückflug, ändert sich gelegentlich. Kurz vor der Einreise füllst du online die kostenlose digitale Einreisekarte aus, die <a href="https://tdac.immigration.go.th/" target="_blank" rel="noopener">TDAC</a>. Bitte vor der Reise beim <a href="https://www.auswaertiges-amt.de/de/reiseundsicherheit/thailandsicherheit-201558" target="_blank" rel="noopener">Auswärtigen Amt</a> prüfen.</p></details>
+        <details><summary>Wie ist das Wetter?</summary><p>Februar ist auf Bali Regenzeit. Das heißt meist kurze, kräftige Schauer, oft am Nachmittag, danach ist es wieder warm. Rechne mit rund 28 Grad und hoher Luftfeuchtigkeit.</p><p>Im Mai ist es auf Phuket heiß und feucht, meist über 30 Grad. Der Mai liegt im Übergang zur Regenzeit, auch Anfang Mai sind kräftige Schauer und Seegang möglich. Bootsausflüge können wetterbedingt kurzfristig ausfallen.</p></details>
         <details><summary>Was ist mit Unverträglichkeiten?</summary><p>Sag uns bei der Anmeldung Bescheid. Wir klären dann mit der Küche, was möglich ist.</p></details>
-        <details><summary>Kann ich länger bleiben?</summary><p>Ja, viele verbinden das Retreat mit Urlaub. <a href="#hotelangebote">Hier</a> stehen die Sonderpreise von Hotels in Sanur, Canggu und Ubud. Das Hotel buchst du selbst, direkt beim Haus.</p></details>
-        <details><summary>Wo wohne ich?</summary><p>Im Grün Canggu. Für die Gruppe haben wir dort ein Zimmerkontingent geblockt. Die Unterkunft kostet ab 390 € pro Woche.</p></details>
+        <details><summary>Kann ich länger bleiben?</summary><p>Ja, viele verbinden das Retreat mit Urlaub. Für Bali stehen <a href="#hotelangebote">hier</a> die Sonderpreise von Hotels in Sanur, Canggu und Ubud. Das Hotel buchst du selbst, direkt beim Haus.</p></details>
+        <details><summary>Wo wohne ich?</summary><p>Auf Bali im Grün Canggu. Für die Gruppe haben wir dort ein Zimmerkontingent geblockt, die Unterkunft kostet ab 390 € pro Woche. In Thailand in einem Wellness-Resort in Rawai im Süden von Phuket, ab rund 405 € pro Woche mit Frühstück.</p></details>
       </div>
     </div>
   </section>
@@ -553,8 +757,8 @@ footer a{text-decoration:underline;text-underline-offset:3px}
       <div style="display:grid;gap:18px;min-width:0">
         <p class="label">Der nächste Schritt</p>
         <h2>Wenn du dabei sein möchtest.</h2>
-        <p class="lead">Schreib Ron über das Anfrageformular. Vor jeder Buchung lernen wir uns in einem persönlichen Gespräch kennen, gern per Videocall. Wir stellen die Gruppe bewusst zusammen, damit sie gut zueinander passt. Sieh deine Anfrage deshalb ruhig als kleine Bewerbung. Wir freuen uns darauf, dich kennenzulernen. Die Plätze sind auf 20 begrenzt.</p>
-        <p class="alt-mail">Lieber per Mail? <a href="mailto:ron@perduss.media?subject=Longevity%20Retreat%20Bali%20Februar%202027">ron@perduss.media</a></p>
+        <p class="lead">Schreib Ron über das Anfrageformular. Vor jeder Buchung lernen wir uns in einem persönlichen Gespräch kennen, gern per Videocall. Wir stellen die Gruppe bewusst zusammen, damit sie gut zueinander passt. Sieh deine Anfrage deshalb ruhig als kleine Bewerbung. Schreib uns dazu, ob du nach Bali oder nach Thailand möchtest. Wir freuen uns darauf, dich kennenzulernen. Die Plätze sind je Retreat auf 20 begrenzt.</p>
+        <p class="alt-mail">Lieber per Mail? <a href="mailto:ron@perduss.media?subject=Longevity%20Retreat%20Asien%202027">ron@perduss.media</a></p>
       </div>
       <div class="formbox">
         <div style="display:grid;gap:16px;padding:28px;border:1px solid var(--line);border-radius:6px">
@@ -576,8 +780,8 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 
 <footer>
   <div class="wrap">
-    <span>Longevity Retreat Bali · Ron Perduss · perduss media Ltd.</span>
-    <span>Fotos: Longevity Retreat Bali 2026</span>
+    <span>Longevity Retreat Asien · Ron Perduss · perduss media Ltd.</span>
+    <span>Fotos: Longevity Retreat Bali, Oktober 2026</span>
     <span><a href="https://www.instagram.com/longevity_retreat_asia/" target="_blank" rel="noopener">Instagram</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
   </div>
 </footer>
