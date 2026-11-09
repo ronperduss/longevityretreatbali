@@ -48,8 +48,10 @@ a{color:inherit}
 /* Hero */
 .hero{position:relative;background:var(--jungle);color:#f4f6f1;overflow:hidden}
 .hero img,.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.62}
-.hero video{opacity:.78}
-@media (prefers-reduced-motion: reduce){.hero video{display:none}}
+.hero video{opacity:1;filter:brightness(.72)}
+.hero .vid-toggle{position:absolute;right:16px;bottom:16px;z-index:2;width:44px;height:44px;border-radius:50%;border:1px solid rgba(244,246,241,.6);background:rgba(11,20,16,.45);color:#f4f6f1;font-size:1rem;cursor:pointer}
+.hero .vid-toggle:focus-visible{outline:3px solid #eba545;outline-offset:2px}
+@media (prefers-reduced-motion: reduce){.hero video,.hero .vid-toggle{display:none}}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,20,16,.15) 0%,rgba(11,20,16,.25) 45%,rgba(11,20,16,.85) 100%)}
 .hero .wrap{position:relative;z-index:1;padding-block:clamp(120px,22vw,220px) clamp(40px,7vw,72px);display:grid;gap:22px}
 .hero .label{color:#d9e2d6}
@@ -266,6 +268,7 @@ html{scroll-behavior:smooth}
     <source src="video/hero-asien-720.mp4" type="video/mp4" media="(max-width: 900px)">
     <source src="video/hero-asien-1080.mp4" type="video/mp4">
   </video>
+  <button class="vid-toggle" type="button" aria-label="Video anhalten">❚❚</button>
   <div class="wrap">
     <p class="label">Longevity Retreat Asien · mit Ron Perduss</p>
     <h1>Longevity muss kein Luxus sein.</h1>
@@ -820,5 +823,14 @@ html{scroll-behavior:smooth}
   </div>
 </footer>
 <script>document.querySelectorAll('.clip video, .host video').forEach(function(v,_,a){v.addEventListener('play',function(){a.forEach(function(o){if(o!==v)o.pause()})})})</script>
+<script>
+(function(){var v=document.querySelector('.hero video'),b=document.querySelector('.hero .vid-toggle');if(!v||!b)return;
+var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)');
+function off(){v.pause();v.removeAttribute('autoplay');[].forEach.call(v.querySelectorAll('source'),function(x){x.removeAttribute('src')});v.load();}
+if(rm&&rm.matches){off();return;}
+if(rm&&rm.addEventListener)rm.addEventListener('change',function(e){if(e.matches)off();});
+b.addEventListener('click',function(){if(v.paused){v.play();b.textContent='❚❚';b.setAttribute('aria-label','Video anhalten');}else{v.pause();b.textContent='▶';b.setAttribute('aria-label','Video abspielen');}});
+})();
+</script>
 </body>
 </html>
