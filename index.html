@@ -47,7 +47,9 @@ a{color:inherit}
 
 /* Hero */
 .hero{position:relative;background:var(--jungle);color:#f4f6f1;overflow:hidden}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.62}
+.hero img,.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.62}
+.hero video{opacity:.78}
+@media (prefers-reduced-motion: reduce){.hero video{display:none}}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,20,16,.15) 0%,rgba(11,20,16,.25) 45%,rgba(11,20,16,.85) 100%)}
 .hero .wrap{position:relative;z-index:1;padding-block:clamp(120px,22vw,220px) clamp(40px,7vw,72px);display:grid;gap:22px}
 .hero .label{color:#d9e2d6}
@@ -260,6 +262,10 @@ html{scroll-behavior:smooth}
 
 <header class="hero">
   <img src="img/pool.jpg" alt="Die Retreat-Gruppe sitzt lachend am Rand eines Wasserbeckens voller Blütenblätter, Füße im Wasser">
+  <video autoplay muted loop playsinline preload="auto" poster="video/hero-asien-poster.jpg" aria-hidden="true">
+    <source src="video/hero-asien-720.mp4" type="video/mp4" media="(max-width: 900px)">
+    <source src="video/hero-asien-1080.mp4" type="video/mp4">
+  </video>
   <div class="wrap">
     <p class="label">Longevity Retreat Asien · mit Ron Perduss</p>
     <h1>Longevity muss kein Luxus sein.</h1>
