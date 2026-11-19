@@ -68,6 +68,11 @@ a{color:inherit}
 .hero-row{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
 .btn{display:inline-block;background:var(--marigold);color:#17251f;text-decoration:none;font-weight:600;padding:.85em 1.4em;border-radius:6px}
 .btn:hover{filter:brightness(1.06)}
+.live-band{display:block;background:#d98a1c;color:#17251f;text-decoration:none;text-align:center;padding:12px max(16px,env(safe-area-inset-left,0px));font-weight:600;line-height:1.4;position:relative;z-index:30}
+.live-band .lb-tag{font-family:var(--mono);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;background:#17251f;color:#f4f6f1;border-radius:999px;padding:.2em .7em;margin-right:.6em;white-space:nowrap}
+.live-band .lb-go{text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.live-band:hover{filter:brightness(1.05)}
+.btn-live{background:#f4f6f1;color:#1f3a2e}
 
 /* Zwei Zahlen */
 .gap-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(32px,6vw,80px);align-items:start}
@@ -270,6 +275,8 @@ html{scroll-behavior:smooth}
 </head>
 <body>
 
+<a class="live-band" href="https://us06web.zoom.us/webinar/register/WN_gIBcZkkJR2-PXvAHg94LlQ" target="_blank" rel="noopener"><span class="lb-tag">Live</span>Freitag, 4. Dezember, 19:30 Uhr: unser Live-Abend, online und kostenlos. <span class="lb-go">Jetzt anmelden →</span></a>
+
 <header class="hero">
   <a class="brand" href="#" aria-label="Longevity Retreat by Ron Perduss, zum Seitenanfang"><img src="img/logo.svg" alt="" width="52" height="52"><span>Longevity Retreat <small>by Ron Perduss</small></span></a>
   <img src="img/pool.jpg" alt="Die Retreat-Gruppe sitzt lachend am Rand eines Wasserbeckens voller Blütenblätter, Füße im Wasser">
@@ -284,6 +291,7 @@ html{scroll-behavior:smooth}
     <p class="lead">Gesund älter werden darf keine Frage des Geldes sein. Eine Woche lang geht es um Bewegung, Ernährung, Medizin und Miteinander. Morgens machst du Yoga und Meditation, dazu kommen Training, Einzelcoaching und Online-Vorträge von Fachleuten aus Ernährung und Medizin. Wir fahren zu Tempeln und Zeremonien, und das Essen passt zu dem, was du in der Woche über Ernährung lernst. 2027 gibt es das Retreat zweimal: auf Bali und in Thailand.</p>
     <div class="hero-row">
       <a class="btn" href="#kontakt">Interesse anmelden</a>
+      <a class="btn btn-live" href="https://us06web.zoom.us/webinar/register/WN_gIBcZkkJR2-PXvAHg94LlQ" target="_blank" rel="noopener">Kostenlos zum Live-Abend am 4.12. anmelden</a>
       <span class="date-chip"><a href="#bali">Bali · 2. bis 9. Februar 2027</a></span>
       <span class="date-chip"><a href="#thailand">Thailand · 4. bis 11. Mai 2027</a></span>
     </div>
